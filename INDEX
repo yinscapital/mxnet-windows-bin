@@ -1,0 +1,1096 @@
+Ops.MXNDArray           Binary operator overloading of mx.ndarray
+arguments               Get the arguments of symbol.
+as.array.MXNDArray      as.array operator overload of mx.ndarray
+as.matrix.MXNDArray     as.matrix operator overload of mx.ndarray
+children                Gets a new grouped symbol whose output contains
+                        inputs to output nodes of the original symbol.
+ctx                     Get the context of mx.ndarray
+dim.MXNDArray           Dimension operator overload of mx.ndarray
+graph.viz               Convert symbol to Graphviz or visNetwork
+                        visualisation.
+internals               Get a symbol that contains all the internals
+is.mx.context           Check if the type is mxnet context.
+is.mx.dataiter          Judge if an object is mx.dataiter
+is.mx.ndarray           Check if src.array is mx.ndarray
+is.mx.symbol            Judge if an object is mx.symbol
+is.num.in.vect          Helper function for top-k accuracy
+is.serialized           Check if the model has been serialized into
+                        RData-compatiable format.
+length.MXNDArray        Length operator overload of mx.ndarray
+mx.apply                Apply symbol to the inputs.
+mx.callback.early.stop
+                        Early stop with different conditions
+mx.callback.log.speedometer
+                        Calculate the training speed
+mx.callback.log.train.metric
+                        Log training metric each period
+mx.callback.save.checkpoint
+                        Save checkpoint to files each period iteration.
+mx.cpu                  Create a mxnet CPU context.
+mx.ctx.default          Set/Get default context for array creation.
+mx.exec.backward        Peform an backward on the executors This
+                        function will MUTATE the state of exec
+mx.exec.forward         Peform an forward on the executors This
+                        function will MUTATE the state of exec
+mx.exec.update.arg.arrays
+                        Update the executors with new arrays This
+                        function will MUTATE the state of exec
+mx.exec.update.aux.arrays
+                        Update the executors with new arrays This
+                        function will MUTATE the state of exec
+mx.exec.update.grad.arrays
+                        Update the executors with new arrays This
+                        function will MUTATE the state of exec
+mx.gpu                  Create a mxnet GPU context.
+mx.gru                  Training GRU Unrolled Model
+mx.gru.forward          Using forward function to predict in gru
+                        inference model
+mx.gru.inference        Create a GRU Inference Model
+mx.init.Xavier          Xavier initializer
+mx.init.create          Create initialization of argument like
+                        arg.array
+mx.init.internal.default
+                        Internal default value initialization scheme.
+mx.init.normal          Create a initializer that initialize the weight
+                        with normal(0, sd)
+mx.init.uniform         Create a initializer that initialize the weight
+                        with uniform [-scale, scale]
+mx.io.CSVIter           Returns the CSV file iterator.
+mx.io.ImageDetRecordIter
+                        Create iterator for image detection dataset
+                        packed in recordio.
+mx.io.ImageRecordIter   Iterates on image RecordIO files
+mx.io.ImageRecordIter_v1
+                        Iterating on image RecordIO files
+mx.io.ImageRecordUInt8Iter
+                        Iterating on image RecordIO files
+mx.io.ImageRecordUInt8Iter_v1
+                        Iterating on image RecordIO files
+mx.io.MNISTIter         Iterating on the MNIST dataset.
+mx.io.arrayiter         Create MXDataIter compatible iterator from R's
+                        array
+mx.io.extract           Extract a certain field from DataIter.
+mx.kv.create            Create a mxnet KVStore.
+mx.lr_scheduler.FactorScheduler
+                        Learning rate scheduler. Reduction based on a
+                        factor value.
+mx.lr_scheduler.MultiFactorScheduler
+                        Multifactor learning rate scheduler. Reduction
+                        based on a factor value at different steps.
+mx.lstm                 Training LSTM Unrolled Model
+mx.lstm.forward         Using forward function to predict in lstm
+                        inference model
+mx.lstm.inference       Create a LSTM Inference Model
+mx.metric.Perplexity    Perplexity metric for language model
+mx.metric.accuracy      Accuracy metric for classification
+mx.metric.custom        Helper function to create a customized metric
+mx.metric.mae           MAE (Mean Absolute Error) metric for regression
+mx.metric.mse           MSE (Mean Squared Error) metric for regression
+mx.metric.rmse          RMSE (Root Mean Squared Error) metric for
+                        regression
+mx.metric.rmsle         RMSLE (Root Mean Squared Logarithmic Error)
+                        metric for regression
+mx.metric.top_k_accuracy
+                        Top-k accuracy metric for classification
+mx.mlp                  Convenience interface for multiple layer
+                        perceptron
+mx.model.FeedForward.create
+                        Create a MXNet Feedforward neural net model
+                        with the specified training.
+mx.model.init.params    Parameter initialization
+mx.model.load           Load model checkpoint from file.
+mx.model.save           Save model checkpoint into file.
+mx.nd.Activation        Applies an activation function element-wise to
+                        the input.
+mx.nd.BatchNorm         Batch normalization.
+mx.nd.BatchNorm.v1      Batch normalization.
+mx.nd.BilinearSampler   Applies bilinear sampling to input feature map.
+mx.nd.BlockGrad         Stops gradient computation.
+mx.nd.Convolution       Compute *N*-D convolution on *(N+2)*-D input.
+mx.nd.Convolution.v1    This operator is DEPRECATED. Apply convolution
+                        to input then add a bias.
+mx.nd.Correlation       Applies correlation to inputs.
+mx.nd.Custom            Apply a custom operator implemented in a
+                        frontend language (like Python).
+mx.nd.Deconvolution     Computes 2D transposed convolution (aka
+                        fractionally strided convolution) of the input
+                        tensor. This operation can be seen as the
+                        gradient of Convolution operation with respect
+                        to its input. Convolution usually reduces the
+                        size of the input. Transposed convolution works
+                        the other way, going from a smaller input to a
+                        larger output while preserving the connectivity
+                        pattern.
+mx.nd.Dropout           Applies dropout operation to input array.
+mx.nd.ElementWiseSum    Adds all input arguments element-wise.
+mx.nd.Embedding         Maps integer indices to vector representations
+                        (embeddings).
+mx.nd.FullyConnected    Applies a linear transformation: :math:'Y =
+                        XW^T + b'.
+mx.nd.GridGenerator     Generates 2D sampling grid for bilinear
+                        sampling.
+mx.nd.IdentityAttachKLSparseReg
+                        Apply a sparse regularization to the output a
+                        sigmoid activation function.
+mx.nd.InstanceNorm      Applies instance normalization to the
+                        n-dimensional input array.
+mx.nd.L2Normalization   Normalize the input array using the L2 norm.
+mx.nd.LRN               Applies local response normalization to the
+                        input.
+mx.nd.LeakyReLU         Applies Leaky rectified linear unit activation
+                        element-wise to the input.
+mx.nd.LinearRegressionOutput
+                        Computes and optimizes for squared loss during
+                        backward propagation. Just outputs "data"
+                        during forward propagation.
+mx.nd.LogisticRegressionOutput
+                        Applies a logistic function to the input.
+mx.nd.MAERegressionOutput
+                        Computes mean absolute error of the input.
+mx.nd.MakeLoss          Make your own loss function in network
+                        construction.
+mx.nd.Pooling           Performs pooling on the input.
+mx.nd.Pooling.v1        This operator is DEPRECATED. Perform pooling on
+                        the input.
+mx.nd.RNN               Applies a recurrent layer to input.
+mx.nd.ROIPooling        Performs region of interest(ROI) pooling on the
+                        input array.
+mx.nd.SVMOutput         Computes support vector machine based
+                        transformation of the input.
+mx.nd.SequenceLast      Takes the last element of a sequence.
+mx.nd.SequenceMask      Sets all elements outside the sequence to a
+                        constant value.
+mx.nd.SequenceReverse   Reverses the elements of each sequence.
+mx.nd.SliceChannel      Splits an array along a particular axis into
+                        multiple sub-arrays.
+mx.nd.SoftmaxActivation
+                        Applies softmax activation to input. This is
+                        intended for internal layers.
+mx.nd.SoftmaxOutput     Computes the gradient of cross entropy loss
+                        with respect to softmax output.
+mx.nd.SpatialTransformer
+                        Applies a spatial transformer to input feature
+                        map.
+mx.nd.SwapAxis          Interchanges two axes of an array.
+mx.nd.UpSampling        Performs nearest neighbor/bilinear up sampling
+                        to inputs.
+mx.nd.abs               Returns element-wise absolute value of the
+                        input.
+mx.nd.adam.update       Update function for Adam optimizer. Adam is
+                        seen as a generalization of AdaGrad.
+mx.nd.add.n             Adds all input arguments element-wise.
+mx.nd.arccos            Returns element-wise inverse cosine of the
+                        input array.
+mx.nd.arccosh           Returns the element-wise inverse hyperbolic
+                        cosine of the input array, computed
+                        element-wise.
+mx.nd.arcsin            Returns element-wise inverse sine of the input
+                        array.
+mx.nd.arcsinh           Returns the element-wise inverse hyperbolic
+                        sine of the input array, computed element-wise.
+mx.nd.arctan            Returns element-wise inverse tangent of the
+                        input array.
+mx.nd.arctanh           Returns the element-wise inverse hyperbolic
+                        tangent of the input array, computed
+                        element-wise.
+mx.nd.argmax            Returns indices of the maximum values along an
+                        axis.
+mx.nd.argmax.channel    Returns argmax indices of each channel from the
+                        input array.
+mx.nd.argmin            Returns indices of the minimum values along an
+                        axis.
+mx.nd.argsort           Returns the indices that would sort an input
+                        array along the given axis.
+mx.nd.array             Create a new 'mx.ndarray' that copies the
+                        content from src on ctx.
+mx.nd.batch.dot         Batchwise dot product.
+mx.nd.batch.take        Takes elements from a data batch.
+mx.nd.broadcast.add     Returns element-wise sum of the input arrays
+                        with broadcasting.
+mx.nd.broadcast.axes    Broadcasts the input array over particular
+                        axes.
+mx.nd.broadcast.axis    Broadcasts the input array over particular
+                        axes.
+mx.nd.broadcast.div     Returns element-wise division of the input
+                        arrays with broadcasting.
+mx.nd.broadcast.equal   Returns the result of element-wise **equal to**
+                        (==) comparison operation with broadcasting.
+mx.nd.broadcast.greater
+                        Returns the result of element-wise **greater
+                        than** (>) comparison operation with
+                        broadcasting.
+mx.nd.broadcast.greater.equal
+                        Returns the result of element-wise **greater
+                        than or equal to** (>=) comparison operation
+                        with broadcasting.
+mx.nd.broadcast.hypot   Returns the hypotenuse of a right angled
+                        triangle, given its "legs" with broadcasting.
+mx.nd.broadcast.lesser
+                        Returns the result of element-wise **lesser
+                        than** (<) comparison operation with
+                        broadcasting.
+mx.nd.broadcast.lesser.equal
+                        Returns the result of element-wise **lesser
+                        than or equal to** (<=) comparison operation
+                        with broadcasting.
+mx.nd.broadcast.maximum
+                        Returns element-wise maximum of the input
+                        arrays with broadcasting.
+mx.nd.broadcast.minimum
+                        Returns element-wise minimum of the input
+                        arrays with broadcasting.
+mx.nd.broadcast.minus   Returns element-wise difference of the input
+                        arrays with broadcasting.
+mx.nd.broadcast.mod     Returns element-wise modulo of the input arrays
+                        with broadcasting.
+mx.nd.broadcast.mul     Returns element-wise product of the input
+                        arrays with broadcasting.
+mx.nd.broadcast.not.equal
+                        Returns the result of element-wise **not equal
+                        to** (!=) comparison operation with
+                        broadcasting.
+mx.nd.broadcast.plus    Returns element-wise sum of the input arrays
+                        with broadcasting.
+mx.nd.broadcast.power   Returns result of first array elements raised
+                        to powers from second array, element-wise with
+                        broadcasting.
+mx.nd.broadcast.sub     Returns element-wise difference of the input
+                        arrays with broadcasting.
+mx.nd.broadcast.to      Broadcasts the input array to a new shape.
+mx.nd.cast              Casts all elements of the input to a new type.
+mx.nd.ceil              Returns element-wise ceiling of the input.
+mx.nd.choose.element.0index
+                        Choose one element from each line(row for
+                        python, column for R/Julia) in lhs according to
+                        index indicated by rhs. This function assume
+                        rhs uses 0-based index.
+mx.nd.clip              Clips (limits) the values in an array.
+mx.nd.concat            Joins input arrays along a given axis.
+mx.nd.copyto            Generate an mx.ndarray object on ctx, with data
+                        copied from src
+mx.nd.cos               Computes the element-wise cosine of the input
+                        array.
+mx.nd.cosh              Returns the hyperbolic cosine of the input
+                        array, computed element-wise.
+mx.nd.crop              Slices a contiguous region of the array.
+mx.nd.degrees           Converts each element of the input array from
+                        radians to degrees.
+mx.nd.dot               Dot product of two arrays.
+mx.nd.elemwise.add      Adds arguments element-wise.
+mx.nd.exp               Returns element-wise exponential value of the
+                        input.
+mx.nd.expand.dims       Inserts a new axis of size 1 into the array
+                        shape
+mx.nd.expm1             Returns "exp(x) - 1" computed element-wise on
+                        the input.
+mx.nd.fill.element.0index
+                        Fill one element of each line(row for python,
+                        column for R/Julia) in lhs according to index
+                        indicated by rhs and values indicated by mhs.
+                        This function assume rhs uses 0-based index.
+mx.nd.fix               Returns element-wise rounded value to the
+                        nearest integer towards zero of the input.
+mx.nd.flatten           Flattens the input array into a 2-D array by
+                        collapsing the higher dimensions.
+mx.nd.flip              Reverses the order of elements along given axis
+                        while preserving array shape.
+mx.nd.floor             Returns element-wise floor of the input.
+mx.nd.gamma             Returns the gamma function (extension of the
+                        factorial function to the reals) , computed
+                        element-wise on the input array.
+mx.nd.gammaln           Returns element-wise log of the absolute value
+                        of the gamma function of the input.
+mx.nd.identity          Returns a copy of the input.
+mx.nd.linalg.gemm       Performs general matrix multiplication and
+                        accumulation. Input are three tensors *A*, *B*,
+                        *C* each of dimension *n >= 2* and each having
+                        the same shape on the leading *n-2* dimensions.
+                        For every *n-2* dimensional index *i* let *A*\
+                        :sub:'i'\ , *B*\ :sub:'i'\ , *C*\ :sub:'i' be
+                        the matrices given by the last *2* dimensions.
+                        The operator performs the BLAS3 function *gemm*
+mx.nd.linalg.gemm2      Performs general matrix multiplication. Input
+                        are two tensors *A*, *B* each of dimension *n
+                        >= 2* and each having the same shape on the
+                        leading *n-2* dimensions. For every *n-2*
+                        dimensional index *i* let *A*\ :sub:'i'\ , *B*\
+                        :sub:'i'\ be the matrices given by the last *2*
+                        dimensions. The operator performs the BLAS3
+                        function *gemm* (restricted to two arguments)
+mx.nd.linalg.potrf      Performs Cholesky factorization of a symmetric
+                        positive-definite matrix. Input is a tensor *A*
+                        of dimension *n >= 2*. For every *n-2*
+                        dimensional index *i* let *A*\ :sub:'i'\ be the
+                        matrix given by the last *2* dimensions. The
+                        operator performs the Cholesky factorization
+                        (LAPACK function *potrf*) on each *A*\
+                        :sub:'i'\ , i.e. it computes a lower triangular
+                        matrix *U*\ :sub:'i' such that
+mx.nd.linalg.potri      Performs matrix inversion from a Cholesky
+                        factorization. Input is a tensor *A* of
+                        dimension *n >= 2*. For every *n-2* dimensional
+                        index *i* let *A*\ :sub:'i'\ be the matrix
+                        given by the last *2* dimensions. The operator
+                        assumes that each *A*\ :sub:'i' is the Cholesky
+                        factorization of some symmetric
+                        positive-definite matrix *B*\ :sub:'i' given as
+                        a lower triangular matrix (so *A* is the output
+                        of a prior call to operator *linalg_potrf*).
+                        The operator computes the inverse of each *B*\
+                        :sub:'i' from this decomposition, i.e
+mx.nd.linalg.sumlogdiag
+                        Computes the sum of the logarithms of all
+                        diagonal elements in a matrix. Input is a
+                        tensor *A* of dimension *n >= 2*. For every
+                        *n-2* dimensional index *i* let *A*\ :sub:'i'\
+                        be the matrix given by the last *2* dimensions.
+                        The operator performs a reduction of each such
+                        matrix to a scalar by summing up the logarithms
+                        of all diagonal elements. All matrices must be
+                        square and all diagonal elements must be
+                        positive.
+mx.nd.linalg.trmm       Performs multiplication with a triangular
+                        matrix. Input are two tensors *A*, *B* each of
+                        dimension *n >= 2* and each having the same
+                        shape on the leading *n-2* dimensions. For
+                        every *n-2* dimensional index *i* let *A*\
+                        :sub:'i'\ , *B*\ :sub:'i'\ be the matrices
+                        given by the last *2* dimensions. The operator
+                        performs the BLAS3 function *trmm*
+mx.nd.linalg.trsm       Solves matrix equations involving a triangular
+                        matrix. Input are two tensors *A*, *B* each of
+                        dimension *n >= 2* and each having the same
+                        shape on the leading *n-2* dimensions. For
+                        every *n-2* dimensional index *i* let *A*\
+                        :sub:'i'\ , *B*\ :sub:'i'\ be the matrices
+                        given by the last *2* dimensions. The operator
+                        performs the BLAS3 function *trsm*, i.e. it
+                        solves the equation
+mx.nd.load              Load an mx.nd.array object on disk
+mx.nd.log               Returns element-wise Natural logarithmic value
+                        of the input.
+mx.nd.log.softmax       Computes the log softmax of the input. This is
+                        equivalent to computing softmax followed by
+                        log.
+mx.nd.log10             Returns element-wise Base-10 logarithmic value
+                        of the input.
+mx.nd.log1p             Returns element-wise "log(1 + x)" value of the
+                        input.
+mx.nd.log2              Returns element-wise Base-2 logarithmic value
+                        of the input.
+mx.nd.make.loss         Stops gradient computation. .. note::
+                        "make_loss" is deprecated, use "MakeLoss".
+mx.nd.max               Computes the max of array elements over given
+                        axes.
+mx.nd.max.axis          Computes the max of array elements over given
+                        axes.
+mx.nd.mean              Computes the mean of array elements over given
+                        axes.
+mx.nd.min               Computes the min of array elements over given
+                        axes.
+mx.nd.min.axis          Computes the min of array elements over given
+                        axes.
+mx.nd.mp.sgd.mom.update
+                        Updater function for multi-precision sgd
+                        optimizer
+mx.nd.mp.sgd.update     Updater function for multi-precision sgd
+                        optimizer
+mx.nd.nanprod           Computes the product of array elements over
+                        given axes treating Not a Numbers ("NaN") as
+                        one.
+mx.nd.nansum            Computes the sum of array elements over given
+                        axes treating Not a Numbers ("NaN") as zero.
+mx.nd.negative          Numerical negative of the argument,
+                        element-wise.
+mx.nd.norm              Flattens the input array and then computes the
+                        l2 norm.
+mx.nd.normal            Draw random samples from a normal (Gaussian)
+                        distribution.
+mx.nd.one.hot           Returns a one-hot array.
+mx.nd.ones              Generate an mx.ndarray object with ones
+mx.nd.ones.like         Return an array of ones with the same shape and
+                        type as the input array.
+mx.nd.pad               Pads an input array with a constant or edge
+                        values of the array.
+mx.nd.pick              Picks elements from an input array according to
+                        the input indices along the given axis.
+mx.nd.prod              Computes the product of array elements over
+                        given axes.
+mx.nd.radians           Converts each element of the input array from
+                        degrees to radians.
+mx.nd.random.exponential
+                        Draw random samples from an exponential
+                        distribution.
+mx.nd.random.gamma      Draw random samples from a gamma distribution.
+mx.nd.random.generalized.negative.binomial
+                        Draw random samples from a generalized negative
+                        binomial distribution.
+mx.nd.random.negative.binomial
+                        Draw random samples from a negative binomial
+                        distribution.
+mx.nd.random.normal     Draw random samples from a normal (Gaussian)
+                        distribution.
+mx.nd.random.poisson    Draw random samples from a Poisson
+                        distribution.
+mx.nd.random.uniform    Draw random samples from a uniform
+                        distribution.
+mx.nd.reciprocal        Returns the reciprocal of the argument,
+                        element-wise.
+mx.nd.relu              Computes rectified linear.
+mx.nd.repeat            Repeats elements of an array.
+mx.nd.reshape           Reshapes the input array.
+mx.nd.reverse           Reverses the order of elements along given axis
+                        while preserving array shape.
+mx.nd.rint              Returns element-wise rounded value to the
+                        nearest integer of the input.
+mx.nd.rmsprop.update    Update function for 'RMSProp' optimizer.
+mx.nd.rmspropalex.update
+                        Update function for RMSPropAlex optimizer.
+mx.nd.round             Returns element-wise rounded value to the
+                        nearest integer of the input.
+mx.nd.rsqrt             Returns element-wise inverse square-root value
+                        of the input.
+mx.nd.sample.exponential
+                        Concurrent sampling from multiple exponential
+                        distributions with parameters lambda (rate).
+mx.nd.sample.gamma      Concurrent sampling from multiple gamma
+                        distributions with parameters *alpha* (shape)
+                        and *beta* (scale).
+mx.nd.sample.generalized.negative.binomial
+                        Concurrent sampling from multiple generalized
+                        negative binomial distributions with parameters
+                        *mu* (mean) and *alpha* (dispersion).
+mx.nd.sample.multinomial
+                        Concurrent sampling from multiple multinomial
+                        distributions.
+mx.nd.sample.negative.binomial
+                        Concurrent sampling from multiple negative
+                        binomial distributions with parameters *k*
+                        (failure limit) and *p* (failure probability).
+mx.nd.sample.normal     Concurrent sampling from multiple normal
+                        distributions with parameters *mu* (mean) and
+                        *sigma* (standard deviation).
+mx.nd.sample.poisson    Concurrent sampling from multiple Poisson
+                        distributions with parameters lambda (rate).
+mx.nd.sample.uniform    Concurrent sampling from multiple uniform
+                        distributions on the intervals given by
+                        *[low,high)*.
+mx.nd.save              Save an mx.nd.array object
+mx.nd.sgd.mom.update    Momentum update function for Stochastic
+                        Gradient Descent (SDG) optimizer.
+mx.nd.sgd.update        Update function for Stochastic Gradient Descent
+                        (SDG) optimizer.
+mx.nd.sigmoid           Computes sigmoid of x element-wise.
+mx.nd.sign              Returns element-wise sign of the input.
+mx.nd.sin               Computes the element-wise sine of the input
+                        array.
+mx.nd.sinh              Returns the hyperbolic sine of the input array,
+                        computed element-wise.
+mx.nd.slice.axis        Slices along a given axis.
+mx.nd.smooth.l1         Calculate Smooth L1 Loss(lhs, scalar) by
+                        summing
+mx.nd.softmax           Applies the softmax function.
+mx.nd.softmax.cross.entropy
+                        Calculate cross entropy of softmax output and
+                        one-hot label.
+mx.nd.sort              Returns a sorted copy of an input array along
+                        the given axis.
+mx.nd.split             Splits an array along a particular axis into
+                        multiple sub-arrays.
+mx.nd.sqrt              Returns element-wise square-root value of the
+                        input.
+mx.nd.square            Returns element-wise squared value of the
+                        input.
+mx.nd.stack             Join a sequence of arrays along a new axis.
+mx.nd.stop.gradient     Stops gradient computation.
+mx.nd.sum               Computes the sum of array elements over given
+                        axes.
+mx.nd.sum.axis          Computes the sum of array elements over given
+                        axes.
+mx.nd.swapaxes          Interchanges two axes of an array.
+mx.nd.take              Takes elements from an input array along the
+                        given axis.
+mx.nd.tan               Computes the element-wise tangent of the input
+                        array.
+mx.nd.tanh              Returns the hyperbolic tangent of the input
+                        array, computed element-wise.
+mx.nd.tile              Repeats the whole array multiple times.
+mx.nd.topk              Returns the top *k* elements in an input array
+                        along the given axis.
+mx.nd.transpose         Permutes the dimensions of an array.
+mx.nd.trunc             Return the element-wise truncated value of the
+                        input.
+mx.nd.uniform           Draw random samples from a uniform
+                        distribution.
+mx.nd.where             Given three ndarrays, condition, x, and y,
+                        return an ndarray with the elements from x or
+                        y, depending on the elements from condition are
+                        true or false. x and y must have the same
+                        shape. If condition has the same shape as x,
+                        each element in the output array is from x if
+                        the corresponding element in the condition is
+                        true, and from y if false. If condition does
+                        not have the same shape as x, it must be a 1D
+                        array whose size is the same as x's first
+                        dimension size. Each row of the output array is
+                        from x's row if the corresponding element from
+                        condition is true, and from y's row if false.
+mx.nd.zeros             Generate an mx.nd.array object with zeros
+mx.nd.zeros.like        Return an array of zeros with the same shape
+                        and type as the input array.
+mx.opt.adadelta         Create an AdaDelta optimizer with respective
+                        parameters.
+mx.opt.adagrad          Create an AdaGrad optimizer with respective
+                        parameters. AdaGrad optimizer of Duchi et al.,
+                        2011,
+mx.opt.adam             Create an Adam optimizer with respective
+                        parameters. Adam optimizer as described in
+                        [King2014].
+mx.opt.create           Create an optimizer by name and parameters
+mx.opt.get.updater      Get an updater closure that can take list of
+                        weight and gradient and return updated list of
+                        weight.
+mx.opt.rmsprop          Create an RMSProp optimizer with respective
+                        parameters. Reference: Tieleman T, Hinton G.
+                        Lecture 6.5-rmsprop: Divide the gradient by a
+                        running average of its recent magnitude[J].
+                        COURSERA: Neural Networks for Machine Learning,
+                        2012, 4(2). The code follows:
+                        http://arxiv.org/pdf/1308.0850v5.pdf Eq(38) -
+                        Eq(45) by Alex Graves, 2013.
+mx.opt.sgd              Create an SGD optimizer with respective
+                        parameters. Perform SGD with momentum update
+mx.profiler.config      Set up the configuration of profiler.
+mx.profiler.state       Set up the profiler state to record operator.
+mx.rnn                  Training RNN Unrolled Model
+mx.rnn.forward          Using forward function to predict in rnn
+                        inference model
+mx.rnn.inference        Create a RNN Inference Model
+mx.rnorm                Generate nomal distribution with mean and sd.
+mx.runif                Generate uniform distribution in [low, high)
+                        with specified shape.
+mx.serialize            Serialize MXNet model into RData-compatiable
+                        format.
+mx.set.seed             Set the seed used by mxnet device-specific
+                        random number generators.
+mx.simple.bind          Simple bind the symbol to executor, with
+                        information from input shapes.
+mx.symbol.Activation    Activation:Applies an activation function
+                        element-wise to the input.
+mx.symbol.BatchNorm     BatchNorm:Batch normalization.
+mx.symbol.BatchNorm_v1
+                        BatchNorm_v1:Batch normalization.
+mx.symbol.BilinearSampler
+                        BilinearSampler:Applies bilinear sampling to
+                        input feature map.
+mx.symbol.BlockGrad     BlockGrad:Stops gradient computation.
+mx.symbol.Concat        Perform an feature concat on channel dim (dim
+                        1) over all the inputs.
+mx.symbol.Convolution   Convolution:Compute *N*-D convolution on
+                        *(N+2)*-D input.
+mx.symbol.Convolution_v1
+                        Convolution_v1:This operator is DEPRECATED.
+                        Apply convolution to input then add a bias.
+mx.symbol.Correlation   Correlation:Applies correlation to inputs.
+mx.symbol.Custom        Custom:Apply a custom operator implemented in a
+                        frontend language (like Python).
+mx.symbol.Deconvolution
+                        Deconvolution:Computes 2D transposed
+                        convolution (aka fractionally strided
+                        convolution) of the input tensor. This
+                        operation can be seen as the gradient of
+                        Convolution operation with respect to its
+                        input. Convolution usually reduces the size of
+                        the input. Transposed convolution works the
+                        other way, going from a smaller input to a
+                        larger output while preserving the connectivity
+                        pattern.
+mx.symbol.Dropout       Dropout:Applies dropout operation to input
+                        array.
+mx.symbol.ElementWiseSum
+                        ElementWiseSum:Adds all input arguments
+                        element-wise.
+mx.symbol.Embedding     Embedding:Maps integer indices to vector
+                        representations (embeddings).
+mx.symbol.FullyConnected
+                        FullyConnected:Applies a linear transformation:
+                        :math:'Y = XW^T + b'.
+mx.symbol.GridGenerator
+                        GridGenerator:Generates 2D sampling grid for
+                        bilinear sampling.
+mx.symbol.Group         Create a symbol that groups symbols together.
+mx.symbol.IdentityAttachKLSparseReg
+                        IdentityAttachKLSparseReg:Apply a sparse
+                        regularization to the output a sigmoid
+                        activation function.
+mx.symbol.InstanceNorm
+                        InstanceNorm:Applies instance normalization to
+                        the n-dimensional input array.
+mx.symbol.L2Normalization
+                        L2Normalization:Normalize the input array using
+                        the L2 norm.
+mx.symbol.LRN           LRN:Applies local response normalization to the
+                        input.
+mx.symbol.LeakyReLU     LeakyReLU:Applies Leaky rectified linear unit
+                        activation element-wise to the input.
+mx.symbol.LinearRegressionOutput
+                        LinearRegressionOutput:Computes and optimizes
+                        for squared loss during backward propagation.
+                        Just outputs "data" during forward propagation.
+mx.symbol.LogisticRegressionOutput
+                        LogisticRegressionOutput:Applies a logistic
+                        function to the input.
+mx.symbol.MAERegressionOutput
+                        MAERegressionOutput:Computes mean absolute
+                        error of the input.
+mx.symbol.MakeLoss      MakeLoss:Make your own loss function in network
+                        construction.
+mx.symbol.Pooling       Pooling:Performs pooling on the input.
+mx.symbol.Pooling_v1    Pooling_v1:This operator is DEPRECATED. Perform
+                        pooling on the input.
+mx.symbol.RNN           RNN:Applies a recurrent layer to input.
+mx.symbol.ROIPooling    ROIPooling:Performs region of interest(ROI)
+                        pooling on the input array.
+mx.symbol.SVMOutput     SVMOutput:Computes support vector machine based
+                        transformation of the input.
+mx.symbol.SequenceLast
+                        SequenceLast:Takes the last element of a
+                        sequence.
+mx.symbol.SequenceMask
+                        SequenceMask:Sets all elements outside the
+                        sequence to a constant value.
+mx.symbol.SequenceReverse
+                        SequenceReverse:Reverses the elements of each
+                        sequence.
+mx.symbol.SliceChannel
+                        SliceChannel:Splits an array along a particular
+                        axis into multiple sub-arrays.
+mx.symbol.SoftmaxActivation
+                        SoftmaxActivation:Applies softmax activation to
+                        input. This is intended for internal layers.
+mx.symbol.SoftmaxOutput
+                        SoftmaxOutput:Computes the gradient of cross
+                        entropy loss with respect to softmax output.
+mx.symbol.SpatialTransformer
+                        SpatialTransformer:Applies a spatial
+                        transformer to input feature map.
+mx.symbol.SwapAxis      SwapAxis:Interchanges two axes of an array.
+mx.symbol.UpSampling    UpSampling:Performs nearest neighbor/bilinear
+                        up sampling to inputs.
+mx.symbol.Variable      Create a symbolic variable with specified name.
+mx.symbol.abs           abs:Returns element-wise absolute value of the
+                        input.
+mx.symbol.adam_update   adam_update:Update function for Adam optimizer.
+                        Adam is seen as a generalization of AdaGrad.
+mx.symbol.add_n         add_n:Adds all input arguments element-wise.
+mx.symbol.arccos        arccos:Returns element-wise inverse cosine of
+                        the input array.
+mx.symbol.arccosh       arccosh:Returns the element-wise inverse
+                        hyperbolic cosine of the input array, computed
+                        element-wise.
+mx.symbol.arcsin        arcsin:Returns element-wise inverse sine of the
+                        input array.
+mx.symbol.arcsinh       arcsinh:Returns the element-wise inverse
+                        hyperbolic sine of the input array, computed
+                        element-wise.
+mx.symbol.arctan        arctan:Returns element-wise inverse tangent of
+                        the input array.
+mx.symbol.arctanh       arctanh:Returns the element-wise inverse
+                        hyperbolic tangent of the input array, computed
+                        element-wise.
+mx.symbol.argmax        argmax:Returns indices of the maximum values
+                        along an axis.
+mx.symbol.argmax_channel
+                        argmax_channel:Returns argmax indices of each
+                        channel from the input array.
+mx.symbol.argmin        argmin:Returns indices of the minimum values
+                        along an axis.
+mx.symbol.argsort       argsort:Returns the indices that would sort an
+                        input array along the given axis.
+mx.symbol.batch_dot     batch_dot:Batchwise dot product.
+mx.symbol.batch_take    batch_take:Takes elements from a data batch.
+mx.symbol.broadcast_add
+                        broadcast_add:Returns element-wise sum of the
+                        input arrays with broadcasting.
+mx.symbol.broadcast_axes
+                        broadcast_axes:Broadcasts the input array over
+                        particular axes.
+mx.symbol.broadcast_axis
+                        broadcast_axis:Broadcasts the input array over
+                        particular axes.
+mx.symbol.broadcast_div
+                        broadcast_div:Returns element-wise division of
+                        the input arrays with broadcasting.
+mx.symbol.broadcast_equal
+                        broadcast_equal:Returns the result of
+                        element-wise **equal to** (==) comparison
+                        operation with broadcasting.
+mx.symbol.broadcast_greater
+                        broadcast_greater:Returns the result of
+                        element-wise **greater than** (>) comparison
+                        operation with broadcasting.
+mx.symbol.broadcast_greater_equal
+                        broadcast_greater_equal:Returns the result of
+                        element-wise **greater than or equal to** (>=)
+                        comparison operation with broadcasting.
+mx.symbol.broadcast_hypot
+                        broadcast_hypot: Returns the hypotenuse of a
+                        right angled triangle, given its "legs" with
+                        broadcasting.
+mx.symbol.broadcast_lesser
+                        broadcast_lesser:Returns the result of
+                        element-wise **lesser than** (<) comparison
+                        operation with broadcasting.
+mx.symbol.broadcast_lesser_equal
+                        broadcast_lesser_equal:Returns the result of
+                        element-wise **lesser than or equal to** (<=)
+                        comparison operation with broadcasting.
+mx.symbol.broadcast_maximum
+                        broadcast_maximum:Returns element-wise maximum
+                        of the input arrays with broadcasting.
+mx.symbol.broadcast_minimum
+                        broadcast_minimum:Returns element-wise minimum
+                        of the input arrays with broadcasting.
+mx.symbol.broadcast_minus
+                        broadcast_minus:Returns element-wise difference
+                        of the input arrays with broadcasting.
+mx.symbol.broadcast_mod
+                        broadcast_mod:Returns element-wise modulo of
+                        the input arrays with broadcasting.
+mx.symbol.broadcast_mul
+                        broadcast_mul:Returns element-wise product of
+                        the input arrays with broadcasting.
+mx.symbol.broadcast_not_equal
+                        broadcast_not_equal:Returns the result of
+                        element-wise **not equal to** (!=) comparison
+                        operation with broadcasting.
+mx.symbol.broadcast_plus
+                        broadcast_plus:Returns element-wise sum of the
+                        input arrays with broadcasting.
+mx.symbol.broadcast_power
+                        broadcast_power:Returns result of first array
+                        elements raised to powers from second array,
+                        element-wise with broadcasting.
+mx.symbol.broadcast_sub
+                        broadcast_sub:Returns element-wise difference
+                        of the input arrays with broadcasting.
+mx.symbol.broadcast_to
+                        broadcast_to:Broadcasts the input array to a
+                        new shape.
+mx.symbol.cast          cast:Casts all elements of the input to a new
+                        type.
+mx.symbol.ceil          ceil:Returns element-wise ceiling of the input.
+mx.symbol.choose_element_0index
+                        choose_element_0index:Choose one element from
+                        each line(row for python, column for R/Julia)
+                        in lhs according to index indicated by rhs.
+                        This function assume rhs uses 0-based index.
+mx.symbol.clip          clip:Clips (limits) the values in an array.
+mx.symbol.cos           cos:Computes the element-wise cosine of the
+                        input array.
+mx.symbol.cosh          cosh:Returns the hyperbolic cosine of the input
+                        array, computed element-wise.
+mx.symbol.crop          crop:Slices a contiguous region of the array.
+mx.symbol.degrees       degrees:Converts each element of the input
+                        array from radians to degrees.
+mx.symbol.dot           dot:Dot product of two arrays.
+mx.symbol.elemwise_add
+                        elemwise_add:Adds arguments element-wise.
+mx.symbol.exp           exp:Returns element-wise exponential value of
+                        the input.
+mx.symbol.expand_dims   expand_dims:Inserts a new axis of size 1 into
+                        the array shape
+mx.symbol.expm1         expm1:Returns "exp(x) - 1" computed
+                        element-wise on the input.
+mx.symbol.fill_element_0index
+                        fill_element_0index:Fill one element of each
+                        line(row for python, column for R/Julia) in lhs
+                        according to index indicated by rhs and values
+                        indicated by mhs. This function assume rhs uses
+                        0-based index.
+mx.symbol.fix           fix:Returns element-wise rounded value to the
+                        nearest integer towards zero of the input.
+mx.symbol.flatten       flatten:Flattens the input array into a 2-D
+                        array by collapsing the higher dimensions.
+mx.symbol.flip          flip:Reverses the order of elements along given
+                        axis while preserving array shape.
+mx.symbol.floor         floor:Returns element-wise floor of the input.
+mx.symbol.gamma         gamma:Returns the gamma function (extension of
+                        the factorial function to the reals) , computed
+                        element-wise on the input array.
+mx.symbol.gammaln       gammaln:Returns element-wise log of the
+                        absolute value of the gamma function of the
+                        input.
+mx.symbol.identity      identity:Returns a copy of the input.
+mx.symbol.infer.shape   Inference the shape of arguments, outputs, and
+                        auxiliary states.
+mx.symbol.linalg_gemm   linalg_gemm:Performs general matrix
+                        multiplication and accumulation. Input are
+                        three tensors *A*, *B*, *C* each of dimension
+                        *n >= 2* and each having the same shape on the
+                        leading *n-2* dimensions. For every *n-2*
+                        dimensional index *i* let *A*\ :sub:'i'\ , *B*\
+                        :sub:'i'\ , *C*\ :sub:'i' be the matrices given
+                        by the last *2* dimensions. The operator
+                        performs the BLAS3 function *gemm*
+mx.symbol.linalg_gemm2
+                        linalg_gemm2:Performs general matrix
+                        multiplication. Input are two tensors *A*, *B*
+                        each of dimension *n >= 2* and each having the
+                        same shape on the leading *n-2* dimensions. For
+                        every *n-2* dimensional index *i* let *A*\
+                        :sub:'i'\ , *B*\ :sub:'i'\ be the matrices
+                        given by the last *2* dimensions. The operator
+                        performs the BLAS3 function *gemm* (restricted
+                        to two arguments)
+mx.symbol.linalg_potrf
+                        linalg_potrf:Performs Cholesky factorization of
+                        a symmetric positive-definite matrix. Input is
+                        a tensor *A* of dimension *n >= 2*. For every
+                        *n-2* dimensional index *i* let *A*\ :sub:'i'\
+                        be the matrix given by the last *2* dimensions.
+                        The operator performs the Cholesky
+                        factorization (LAPACK function *potrf*) on each
+                        *A*\ :sub:'i'\ , i.e. it computes a lower
+                        triangular matrix *U*\ :sub:'i' such that
+mx.symbol.linalg_potri
+                        linalg_potri:Performs matrix inversion from a
+                        Cholesky factorization. Input is a tensor *A*
+                        of dimension *n >= 2*. For every *n-2*
+                        dimensional index *i* let *A*\ :sub:'i'\ be the
+                        matrix given by the last *2* dimensions. The
+                        operator assumes that each *A*\ :sub:'i' is the
+                        Cholesky factorization of some symmetric
+                        positive-definite matrix *B*\ :sub:'i' given as
+                        a lower triangular matrix (so *A* is the output
+                        of a prior call to operator *linalg_potrf*).
+                        The operator computes the inverse of each *B*\
+                        :sub:'i' from this decomposition, i.e
+mx.symbol.linalg_sumlogdiag
+                        linalg_sumlogdiag:Computes the sum of the
+                        logarithms of all diagonal elements in a
+                        matrix. Input is a tensor *A* of dimension *n
+                        >= 2*. For every *n-2* dimensional index *i*
+                        let *A*\ :sub:'i'\ be the matrix given by the
+                        last *2* dimensions. The operator performs a
+                        reduction of each such matrix to a scalar by
+                        summing up the logarithms of all diagonal
+                        elements. All matrices must be square and all
+                        diagonal elements must be positive.
+mx.symbol.linalg_trmm   linalg_trmm:Performs multiplication with a
+                        triangular matrix. Input are two tensors *A*,
+                        *B* each of dimension *n >= 2* and each having
+                        the same shape on the leading *n-2* dimensions.
+                        For every *n-2* dimensional index *i* let *A*\
+                        :sub:'i'\ , *B*\ :sub:'i'\ be the matrices
+                        given by the last *2* dimensions. The operator
+                        performs the BLAS3 function *trmm*
+mx.symbol.linalg_trsm   linalg_trsm:Solves matrix equations involving a
+                        triangular matrix. Input are two tensors *A*,
+                        *B* each of dimension *n >= 2* and each having
+                        the same shape on the leading *n-2* dimensions.
+                        For every *n-2* dimensional index *i* let *A*\
+                        :sub:'i'\ , *B*\ :sub:'i'\ be the matrices
+                        given by the last *2* dimensions. The operator
+                        performs the BLAS3 function *trsm*, i.e. it
+                        solves the equation
+mx.symbol.load          Load an mx.symbol object
+mx.symbol.load.json     Load an mx.symbol object from a json string
+mx.symbol.log           log:Returns element-wise Natural logarithmic
+                        value of the input.
+mx.symbol.log10         log10:Returns element-wise Base-10 logarithmic
+                        value of the input.
+mx.symbol.log1p         log1p:Returns element-wise "log(1 + x)" value
+                        of the input.
+mx.symbol.log2          log2:Returns element-wise Base-2 logarithmic
+                        value of the input.
+mx.symbol.log_softmax   log_softmax:Computes the log softmax of the
+                        input. This is equivalent to computing softmax
+                        followed by log.
+mx.symbol.make_loss     make_loss:Stops gradient computation. .. note::
+                        "make_loss" is deprecated, use "MakeLoss".
+mx.symbol.max           max:Computes the max of array elements over
+                        given axes.
+mx.symbol.max_axis      max_axis:Computes the max of array elements
+                        over given axes.
+mx.symbol.mean          mean:Computes the mean of array elements over
+                        given axes.
+mx.symbol.mp_sgd_mom_update
+                        mp_sgd_mom_update:Updater function for
+                        multi-precision sgd optimizer
+mx.symbol.mp_sgd_update
+                        mp_sgd_update:Updater function for
+                        multi-precision sgd optimizer
+mx.symbol.nanprod       nanprod:Computes the product of array elements
+                        over given axes treating Not a Numbers ("NaN")
+                        as one.
+mx.symbol.nansum        nansum:Computes the sum of array elements over
+                        given axes treating Not a Numbers ("NaN") as
+                        zero.
+mx.symbol.negative      negative:Numerical negative of the argument,
+                        element-wise.
+mx.symbol.norm          norm:Flattens the input array and then computes
+                        the l2 norm.
+mx.symbol.normal        normal:Draw random samples from a normal
+                        (Gaussian) distribution.
+mx.symbol.one_hot       one_hot:Returns a one-hot array.
+mx.symbol.ones_like     ones_like:Return an array of ones with the same
+                        shape and type as the input array.
+mx.symbol.pad           pad:Pads an input array with a constant or edge
+                        values of the array.
+mx.symbol.pick          pick:Picks elements from an input array
+                        according to the input indices along the given
+                        axis.
+mx.symbol.prod          prod:Computes the product of array elements
+                        over given axes.
+mx.symbol.radians       radians:Converts each element of the input
+                        array from degrees to radians.
+mx.symbol.random_exponential
+                        random_exponential:Draw random samples from an
+                        exponential distribution.
+mx.symbol.random_gamma
+                        random_gamma:Draw random samples from a gamma
+                        distribution.
+mx.symbol.random_generalized_negative_binomial
+                        random_generalized_negative_binomial:Draw
+                        random samples from a generalized negative
+                        binomial distribution.
+mx.symbol.random_negative_binomial
+                        random_negative_binomial:Draw random samples
+                        from a negative binomial distribution.
+mx.symbol.random_normal
+                        random_normal:Draw random samples from a normal
+                        (Gaussian) distribution.
+mx.symbol.random_poisson
+                        random_poisson:Draw random samples from a
+                        Poisson distribution.
+mx.symbol.random_uniform
+                        random_uniform:Draw random samples from a
+                        uniform distribution.
+mx.symbol.reciprocal    reciprocal:Returns the reciprocal of the
+                        argument, element-wise.
+mx.symbol.relu          relu:Computes rectified linear.
+mx.symbol.repeat        repeat:Repeats elements of an array.
+mx.symbol.reshape       reshape:Reshapes the input array.
+mx.symbol.reverse       reverse:Reverses the order of elements along
+                        given axis while preserving array shape.
+mx.symbol.rint          rint:Returns element-wise rounded value to the
+                        nearest integer of the input.
+mx.symbol.rmsprop_update
+                        rmsprop_update:Update function for 'RMSProp'
+                        optimizer.
+mx.symbol.rmspropalex_update
+                        rmspropalex_update:Update function for
+                        RMSPropAlex optimizer.
+mx.symbol.round         round:Returns element-wise rounded value to the
+                        nearest integer of the input.
+mx.symbol.rsqrt         rsqrt:Returns element-wise inverse square-root
+                        value of the input.
+mx.symbol.sample_exponential
+                        sample_exponential:Concurrent sampling from
+                        multiple exponential distributions with
+                        parameters lambda (rate).
+mx.symbol.sample_gamma
+                        sample_gamma:Concurrent sampling from multiple
+                        gamma distributions with parameters *alpha*
+                        (shape) and *beta* (scale).
+mx.symbol.sample_generalized_negative_binomial
+                        sample_generalized_negative_binomial:Concurrent
+                        sampling from multiple generalized negative
+                        binomial distributions with parameters *mu*
+                        (mean) and *alpha* (dispersion).
+mx.symbol.sample_multinomial
+                        sample_multinomial:Concurrent sampling from
+                        multiple multinomial distributions.
+mx.symbol.sample_negative_binomial
+                        sample_negative_binomial:Concurrent sampling
+                        from multiple negative binomial distributions
+                        with parameters *k* (failure limit) and *p*
+                        (failure probability).
+mx.symbol.sample_normal
+                        sample_normal:Concurrent sampling from multiple
+                        normal distributions with parameters *mu*
+                        (mean) and *sigma* (standard deviation).
+mx.symbol.sample_poisson
+                        sample_poisson:Concurrent sampling from
+                        multiple Poisson distributions with parameters
+                        lambda (rate).
+mx.symbol.sample_uniform
+                        sample_uniform:Concurrent sampling from
+                        multiple uniform distributions on the intervals
+                        given by *[low,high)*.
+mx.symbol.save          Save an mx.symbol object
+mx.symbol.sgd_mom_update
+                        sgd_mom_update:Momentum update function for
+                        Stochastic Gradient Descent (SDG) optimizer.
+mx.symbol.sgd_update    sgd_update:Update function for Stochastic
+                        Gradient Descent (SDG) optimizer.
+mx.symbol.sigmoid       sigmoid:Computes sigmoid of x element-wise.
+mx.symbol.sign          sign:Returns element-wise sign of the input.
+mx.symbol.sin           sin:Computes the element-wise sine of the input
+                        array.
+mx.symbol.sinh          sinh:Returns the hyperbolic sine of the input
+                        array, computed element-wise.
+mx.symbol.slice         slice:Slices a contiguous region of the array.
+mx.symbol.slice_axis    slice_axis:Slices along a given axis.
+mx.symbol.smooth_l1     smooth_l1:Calculate Smooth L1 Loss(lhs, scalar)
+                        by summing
+mx.symbol.softmax       softmax:Applies the softmax function.
+mx.symbol.softmax_cross_entropy
+                        softmax_cross_entropy:Calculate cross entropy
+                        of softmax output and one-hot label.
+mx.symbol.sort          sort:Returns a sorted copy of an input array
+                        along the given axis.
+mx.symbol.split         split:Splits an array along a particular axis
+                        into multiple sub-arrays.
+mx.symbol.sqrt          sqrt:Returns element-wise square-root value of
+                        the input.
+mx.symbol.square        square:Returns element-wise squared value of
+                        the input.
+mx.symbol.stack         stack:Join a sequence of arrays along a new
+                        axis.
+mx.symbol.stop_gradient
+                        stop_gradient:Stops gradient computation.
+mx.symbol.sum           sum:Computes the sum of array elements over
+                        given axes.
+mx.symbol.sum_axis      sum_axis:Computes the sum of array elements
+                        over given axes.
+mx.symbol.swapaxes      swapaxes:Interchanges two axes of an array.
+mx.symbol.take          take:Takes elements from an input array along
+                        the given axis.
+mx.symbol.tan           tan:Computes the element-wise tangent of the
+                        input array.
+mx.symbol.tanh          tanh:Returns the hyperbolic tangent of the
+                        input array, computed element-wise.
+mx.symbol.tile          tile:Repeats the whole array multiple times.
+mx.symbol.topk          topk:Returns the top *k* elements in an input
+                        array along the given axis.
+mx.symbol.transpose     transpose:Permutes the dimensions of an array.
+mx.symbol.trunc         trunc:Return the element-wise truncated value
+                        of the input.
+mx.symbol.uniform       uniform:Draw random samples from a uniform
+                        distribution.
+mx.symbol.where         where:Given three ndarrays, condition, x, and
+                        y, return an ndarray with the elements from x
+                        or y, depending on the elements from condition
+                        are true or false. x and y must have the same
+                        shape. If condition has the same shape as x,
+                        each element in the output array is from x if
+                        the corresponding element in the condition is
+                        true, and from y if false. If condition does
+                        not have the same shape as x, it must be a 1D
+                        array whose size is the same as x's first
+                        dimension size. Each row of the output array is
+                        from x's row if the corresponding element from
+                        condition is true, and from y's row if false.
+mx.symbol.zeros_like    zeros_like:Return an array of zeros with the
+                        same shape and type as the input array.
+mx.unserialize          Unserialize MXNet model from Robject.
+mxnet                   MXNet: Flexible and Efficient GPU computing and
+                        Deep Learning.
+mxnet.export            Internal function to generate mxnet_generated.R
+                        Users do not need to call this function.
+outputs                 Get the outputs of a symbol.
+predict.MXFeedForwardModel
+                        Predict the outputs given a model and dataset.
+print.MXNDArray         print operator overload of mx.ndarray

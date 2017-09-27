@@ -1,0 +1,1005 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>R: MXNet: A Flexible and Efficient Machine Learning Library for
+Heterogeneous Distributed Systems</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+<h1> MXNet: A Flexible and Efficient Machine Learning Library for
+Heterogeneous Distributed Systems
+<img class="toplogo" src="../../../doc/html/Rlogo.svg" alt="[R logo]" />
+</h1>
+<hr/>
+<div style="text-align: center;">
+<a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]" /></a>
+<a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]" /></a>
+</div><h2>Documentation for package &lsquo;mxnet&rsquo; version 0.10.1</h2>
+
+<ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
+<li><a href="../demo">Code demos</a>.  Use <a href="../../utils/help/demo">demo()</a> to run them.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<p style="text-align: center;">
+<a href="# "> </a>
+<a href="#A">A</a>
+<a href="#C">C</a>
+<a href="#D">D</a>
+<a href="#G">G</a>
+<a href="#I">I</a>
+<a href="#L">L</a>
+<a href="#M">M</a>
+<a href="#O">O</a>
+<a href="#P">P</a>
+</p>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="mxnet.html">mxnet-package</a></td>
+<td>MXNet: Flexible and Efficient GPU computing and Deep Learning.</td></tr>
+</table>
+
+<h2><a name="A">-- A --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="arguments.html">arguments</a></td>
+<td>Get the arguments of symbol.</td></tr>
+<tr><td style="width: 25%;"><a href="as.array.MXNDArray.html">as.array.MXNDArray</a></td>
+<td>as.array operator overload of mx.ndarray</td></tr>
+<tr><td style="width: 25%;"><a href="as.matrix.MXNDArray.html">as.matrix.MXNDArray</a></td>
+<td>as.matrix operator overload of mx.ndarray</td></tr>
+</table>
+
+<h2><a name="C">-- C --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="children.html">children</a></td>
+<td>Gets a new grouped symbol whose output contains inputs to output nodes of the original symbol.</td></tr>
+<tr><td style="width: 25%;"><a href="ctx.html">ctx</a></td>
+<td>Get the context of mx.ndarray</td></tr>
+</table>
+
+<h2><a name="D">-- D --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="dim.MXNDArray.html">dim.MXNDArray</a></td>
+<td>Dimension operator overload of mx.ndarray</td></tr>
+</table>
+
+<h2><a name="G">-- G --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="graph.viz.html">graph.viz</a></td>
+<td>Convert symbol to Graphviz or visNetwork visualisation.</td></tr>
+</table>
+
+<h2><a name="I">-- I --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="internals.html">internals</a></td>
+<td>Get a symbol that contains all the internals</td></tr>
+<tr><td style="width: 25%;"><a href="is.mx.context.html">is.mx.context</a></td>
+<td>Check if the type is mxnet context.</td></tr>
+<tr><td style="width: 25%;"><a href="is.mx.dataiter.html">is.mx.dataiter</a></td>
+<td>Judge if an object is mx.dataiter</td></tr>
+<tr><td style="width: 25%;"><a href="is.mx.ndarray.html">is.mx.ndarray</a></td>
+<td>Check if src.array is mx.ndarray</td></tr>
+<tr><td style="width: 25%;"><a href="is.mx.symbol.html">is.mx.symbol</a></td>
+<td>Judge if an object is mx.symbol</td></tr>
+<tr><td style="width: 25%;"><a href="is.num.in.vect.html">is.num.in.vect</a></td>
+<td>Helper function for top-k accuracy</td></tr>
+<tr><td style="width: 25%;"><a href="is.serialized.html">is.serialized</a></td>
+<td>Check if the model has been serialized into RData-compatiable format.</td></tr>
+</table>
+
+<h2><a name="L">-- L --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="length.MXNDArray.html">length.MXNDArray</a></td>
+<td>Length operator overload of mx.ndarray</td></tr>
+</table>
+
+<h2><a name="M">-- M --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="mx.apply.html">mx.apply</a></td>
+<td>Apply symbol to the inputs.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.callback.early.stop.html">mx.callback.early.stop</a></td>
+<td>Early stop with different conditions</td></tr>
+<tr><td style="width: 25%;"><a href="mx.callback.log.speedometer.html">mx.callback.log.speedometer</a></td>
+<td>Calculate the training speed</td></tr>
+<tr><td style="width: 25%;"><a href="mx.callback.log.train.metric.html">mx.callback.log.train.metric</a></td>
+<td>Log training metric each period</td></tr>
+<tr><td style="width: 25%;"><a href="mx.callback.save.checkpoint.html">mx.callback.save.checkpoint</a></td>
+<td>Save checkpoint to files each period iteration.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.cpu.html">mx.cpu</a></td>
+<td>Create a mxnet CPU context.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.ctx.default.html">mx.ctx.default</a></td>
+<td>Set/Get default context for array creation.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.exec.backward.html">mx.exec.backward</a></td>
+<td>Peform an backward on the executors This function will MUTATE the state of exec</td></tr>
+<tr><td style="width: 25%;"><a href="mx.exec.forward.html">mx.exec.forward</a></td>
+<td>Peform an forward on the executors This function will MUTATE the state of exec</td></tr>
+<tr><td style="width: 25%;"><a href="mx.exec.update.arg.arrays.html">mx.exec.update.arg.arrays</a></td>
+<td>Update the executors with new arrays This function will MUTATE the state of exec</td></tr>
+<tr><td style="width: 25%;"><a href="mx.exec.update.aux.arrays.html">mx.exec.update.aux.arrays</a></td>
+<td>Update the executors with new arrays This function will MUTATE the state of exec</td></tr>
+<tr><td style="width: 25%;"><a href="mx.exec.update.grad.arrays.html">mx.exec.update.grad.arrays</a></td>
+<td>Update the executors with new arrays This function will MUTATE the state of exec</td></tr>
+<tr><td style="width: 25%;"><a href="mx.gpu.html">mx.gpu</a></td>
+<td>Create a mxnet GPU context.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.gru.html">mx.gru</a></td>
+<td>Training GRU Unrolled Model</td></tr>
+<tr><td style="width: 25%;"><a href="mx.gru.forward.html">mx.gru.forward</a></td>
+<td>Using forward function to predict in gru inference model</td></tr>
+<tr><td style="width: 25%;"><a href="mx.gru.inference.html">mx.gru.inference</a></td>
+<td>Create a GRU Inference Model</td></tr>
+<tr><td style="width: 25%;"><a href="mx.init.create.html">mx.init.create</a></td>
+<td>Create initialization of argument like arg.array</td></tr>
+<tr><td style="width: 25%;"><a href="mx.init.internal.default.html">mx.init.internal.default</a></td>
+<td>Internal default value initialization scheme.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.init.normal.html">mx.init.normal</a></td>
+<td>Create a initializer that initialize the weight with normal(0, sd)</td></tr>
+<tr><td style="width: 25%;"><a href="mx.init.uniform.html">mx.init.uniform</a></td>
+<td>Create a initializer that initialize the weight with uniform [-scale, scale]</td></tr>
+<tr><td style="width: 25%;"><a href="mx.init.Xavier.html">mx.init.Xavier</a></td>
+<td>Xavier initializer</td></tr>
+<tr><td style="width: 25%;"><a href="mx.io.arrayiter.html">mx.io.arrayiter</a></td>
+<td>Create MXDataIter compatible iterator from R's array</td></tr>
+<tr><td style="width: 25%;"><a href="mx.io.CSVIter.html">mx.io.CSVIter</a></td>
+<td>Returns the CSV file iterator.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.io.extract.html">mx.io.extract</a></td>
+<td>Extract a certain field from DataIter.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.io.ImageDetRecordIter.html">mx.io.ImageDetRecordIter</a></td>
+<td>Create iterator for image detection dataset packed in recordio.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.io.ImageRecordIter.html">mx.io.ImageRecordIter</a></td>
+<td>Iterates on image RecordIO files</td></tr>
+<tr><td style="width: 25%;"><a href="mx.io.ImageRecordIter_v1.html">mx.io.ImageRecordIter_v1</a></td>
+<td>Iterating on image RecordIO files</td></tr>
+<tr><td style="width: 25%;"><a href="mx.io.ImageRecordUInt8Iter.html">mx.io.ImageRecordUInt8Iter</a></td>
+<td>Iterating on image RecordIO files</td></tr>
+<tr><td style="width: 25%;"><a href="mx.io.ImageRecordUInt8Iter_v1.html">mx.io.ImageRecordUInt8Iter_v1</a></td>
+<td>Iterating on image RecordIO files</td></tr>
+<tr><td style="width: 25%;"><a href="mx.io.MNISTIter.html">mx.io.MNISTIter</a></td>
+<td>Iterating on the MNIST dataset.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.kv.create.html">mx.kv.create</a></td>
+<td>Create a mxnet KVStore.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.lr_scheduler.FactorScheduler.html">mx.lr_scheduler.FactorScheduler</a></td>
+<td>Learning rate scheduler. Reduction based on a factor value.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.lr_scheduler.MultiFactorScheduler.html">mx.lr_scheduler.MultiFactorScheduler</a></td>
+<td>Multifactor learning rate scheduler. Reduction based on a factor value at different steps.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.lstm.html">mx.lstm</a></td>
+<td>Training LSTM Unrolled Model</td></tr>
+<tr><td style="width: 25%;"><a href="mx.lstm.forward.html">mx.lstm.forward</a></td>
+<td>Using forward function to predict in lstm inference model</td></tr>
+<tr><td style="width: 25%;"><a href="mx.lstm.inference.html">mx.lstm.inference</a></td>
+<td>Create a LSTM Inference Model</td></tr>
+<tr><td style="width: 25%;"><a href="mx.metric.accuracy.html">mx.metric.accuracy</a></td>
+<td>Accuracy metric for classification</td></tr>
+<tr><td style="width: 25%;"><a href="mx.metric.custom.html">mx.metric.custom</a></td>
+<td>Helper function to create a customized metric</td></tr>
+<tr><td style="width: 25%;"><a href="mx.metric.mae.html">mx.metric.mae</a></td>
+<td>MAE (Mean Absolute Error) metric for regression</td></tr>
+<tr><td style="width: 25%;"><a href="mx.metric.mse.html">mx.metric.mse</a></td>
+<td>MSE (Mean Squared Error) metric for regression</td></tr>
+<tr><td style="width: 25%;"><a href="mx.metric.Perplexity.html">mx.metric.Perplexity</a></td>
+<td>Perplexity metric for language model</td></tr>
+<tr><td style="width: 25%;"><a href="mx.metric.rmse.html">mx.metric.rmse</a></td>
+<td>RMSE (Root Mean Squared Error) metric for regression</td></tr>
+<tr><td style="width: 25%;"><a href="mx.metric.rmsle.html">mx.metric.rmsle</a></td>
+<td>RMSLE (Root Mean Squared Logarithmic Error) metric for regression</td></tr>
+<tr><td style="width: 25%;"><a href="mx.metric.top_k_accuracy.html">mx.metric.top_k_accuracy</a></td>
+<td>Top-k accuracy metric for classification</td></tr>
+<tr><td style="width: 25%;"><a href="mx.mlp.html">mx.mlp</a></td>
+<td>Convenience interface for multiple layer perceptron</td></tr>
+<tr><td style="width: 25%;"><a href="mx.model.FeedForward.create.html">mx.model.FeedForward.create</a></td>
+<td>Create a MXNet Feedforward neural net model with the specified training.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.model.init.params.html">mx.model.init.params</a></td>
+<td>Parameter initialization</td></tr>
+<tr><td style="width: 25%;"><a href="mx.model.load.html">mx.model.load</a></td>
+<td>Load model checkpoint from file.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.model.save.html">mx.model.save</a></td>
+<td>Save model checkpoint into file.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.abs.html">mx.nd.abs</a></td>
+<td>Returns element-wise absolute value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.Activation.html">mx.nd.Activation</a></td>
+<td>Applies an activation function element-wise to the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.adam.update.html">mx.nd.adam.update</a></td>
+<td>Update function for Adam optimizer. Adam is seen as a generalization of AdaGrad.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.add.n.html">mx.nd.add.n</a></td>
+<td>Adds all input arguments element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.arccos.html">mx.nd.arccos</a></td>
+<td>Returns element-wise inverse cosine of the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.arccosh.html">mx.nd.arccosh</a></td>
+<td>Returns the element-wise inverse hyperbolic cosine of the input array, computed element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.arcsin.html">mx.nd.arcsin</a></td>
+<td>Returns element-wise inverse sine of the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.arcsinh.html">mx.nd.arcsinh</a></td>
+<td>Returns the element-wise inverse hyperbolic sine of the input array, computed element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.arctan.html">mx.nd.arctan</a></td>
+<td>Returns element-wise inverse tangent of the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.arctanh.html">mx.nd.arctanh</a></td>
+<td>Returns the element-wise inverse hyperbolic tangent of the input array, computed element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.argmax.html">mx.nd.argmax</a></td>
+<td>Returns indices of the maximum values along an axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.argmax.channel.html">mx.nd.argmax.channel</a></td>
+<td>Returns argmax indices of each channel from the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.argmin.html">mx.nd.argmin</a></td>
+<td>Returns indices of the minimum values along an axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.argsort.html">mx.nd.argsort</a></td>
+<td>Returns the indices that would sort an input array along the given axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.array.html">mx.nd.array</a></td>
+<td>Create a new 'mx.ndarray' that copies the content from src on ctx.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.batch.dot.html">mx.nd.batch.dot</a></td>
+<td>Batchwise dot product.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.batch.take.html">mx.nd.batch.take</a></td>
+<td>Takes elements from a data batch.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.BatchNorm.html">mx.nd.BatchNorm</a></td>
+<td>Batch normalization.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.BatchNorm.v1.html">mx.nd.BatchNorm.v1</a></td>
+<td>Batch normalization.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.BilinearSampler.html">mx.nd.BilinearSampler</a></td>
+<td>Applies bilinear sampling to input feature map.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.BlockGrad.html">mx.nd.BlockGrad</a></td>
+<td>Stops gradient computation.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.add.html">mx.nd.broadcast.add</a></td>
+<td>Returns element-wise sum of the input arrays with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.axes.html">mx.nd.broadcast.axes</a></td>
+<td>Broadcasts the input array over particular axes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.axis.html">mx.nd.broadcast.axis</a></td>
+<td>Broadcasts the input array over particular axes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.div.html">mx.nd.broadcast.div</a></td>
+<td>Returns element-wise division of the input arrays with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.equal.html">mx.nd.broadcast.equal</a></td>
+<td>Returns the result of element-wise **equal to** (==) comparison operation with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.greater.html">mx.nd.broadcast.greater</a></td>
+<td>Returns the result of element-wise **greater than** (&gt;) comparison operation with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.greater.equal.html">mx.nd.broadcast.greater.equal</a></td>
+<td>Returns the result of element-wise **greater than or equal to** (&gt;=) comparison operation with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.hypot.html">mx.nd.broadcast.hypot</a></td>
+<td>Returns the hypotenuse of a right angled triangle, given its "legs" with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.lesser.html">mx.nd.broadcast.lesser</a></td>
+<td>Returns the result of element-wise **lesser than** (&lt;) comparison operation with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.lesser.equal.html">mx.nd.broadcast.lesser.equal</a></td>
+<td>Returns the result of element-wise **lesser than or equal to** (&lt;=) comparison operation with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.maximum.html">mx.nd.broadcast.maximum</a></td>
+<td>Returns element-wise maximum of the input arrays with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.minimum.html">mx.nd.broadcast.minimum</a></td>
+<td>Returns element-wise minimum of the input arrays with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.minus.html">mx.nd.broadcast.minus</a></td>
+<td>Returns element-wise difference of the input arrays with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.mod.html">mx.nd.broadcast.mod</a></td>
+<td>Returns element-wise modulo of the input arrays with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.mul.html">mx.nd.broadcast.mul</a></td>
+<td>Returns element-wise product of the input arrays with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.not.equal.html">mx.nd.broadcast.not.equal</a></td>
+<td>Returns the result of element-wise **not equal to** (!=) comparison operation with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.plus.html">mx.nd.broadcast.plus</a></td>
+<td>Returns element-wise sum of the input arrays with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.power.html">mx.nd.broadcast.power</a></td>
+<td>Returns result of first array elements raised to powers from second array, element-wise with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.sub.html">mx.nd.broadcast.sub</a></td>
+<td>Returns element-wise difference of the input arrays with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.broadcast.to.html">mx.nd.broadcast.to</a></td>
+<td>Broadcasts the input array to a new shape.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.Cast.html">mx.nd.cast</a></td>
+<td>Casts all elements of the input to a new type.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.ceil.html">mx.nd.ceil</a></td>
+<td>Returns element-wise ceiling of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.choose.element.0index.html">mx.nd.choose.element.0index</a></td>
+<td>Choose one element from each line(row for python, column for R/Julia) in lhs according to index indicated by rhs. This function assume rhs uses 0-based index.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.clip.html">mx.nd.clip</a></td>
+<td>Clips (limits) the values in an array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.Concat.html">mx.nd.concat</a></td>
+<td>Joins input arrays along a given axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.Convolution.html">mx.nd.Convolution</a></td>
+<td>Compute *N*-D convolution on *(N+2)*-D input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.Convolution.v1.html">mx.nd.Convolution.v1</a></td>
+<td>This operator is DEPRECATED. Apply convolution to input then add a bias.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.copyto.html">mx.nd.copyto</a></td>
+<td>Generate an mx.ndarray object on ctx, with data copied from src</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.Correlation.html">mx.nd.Correlation</a></td>
+<td>Applies correlation to inputs.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.cos.html">mx.nd.cos</a></td>
+<td>Computes the element-wise cosine of the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.cosh.html">mx.nd.cosh</a></td>
+<td>Returns the hyperbolic cosine of the input array, computed element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.Crop.html">mx.nd.crop</a></td>
+<td>Slices a contiguous region of the array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.Custom.html">mx.nd.Custom</a></td>
+<td>Apply a custom operator implemented in a frontend language (like Python).</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.Deconvolution.html">mx.nd.Deconvolution</a></td>
+<td>Computes 2D transposed convolution (aka fractionally strided convolution) of the input tensor. This operation can be seen as the gradient of Convolution operation with respect to its input. Convolution usually reduces the size of the input. Transposed convolution works the other way, going from a smaller input to a larger output while preserving the connectivity pattern.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.degrees.html">mx.nd.degrees</a></td>
+<td>Converts each element of the input array from radians to degrees.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.dot.html">mx.nd.dot</a></td>
+<td>Dot product of two arrays.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.Dropout.html">mx.nd.Dropout</a></td>
+<td>Applies dropout operation to input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.ElementWiseSum.html">mx.nd.ElementWiseSum</a></td>
+<td>Adds all input arguments element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.elemwise.add.html">mx.nd.elemwise.add</a></td>
+<td>Adds arguments element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.Embedding.html">mx.nd.Embedding</a></td>
+<td>Maps integer indices to vector representations (embeddings).</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.exp.html">mx.nd.exp</a></td>
+<td>Returns element-wise exponential value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.expand.dims.html">mx.nd.expand.dims</a></td>
+<td>Inserts a new axis of size 1 into the array shape</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.expm1.html">mx.nd.expm1</a></td>
+<td>Returns "exp(x) - 1" computed element-wise on the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.fill.element.0index.html">mx.nd.fill.element.0index</a></td>
+<td>Fill one element of each line(row for python, column for R/Julia) in lhs according to index indicated by rhs and values indicated by mhs. This function assume rhs uses 0-based index.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.fix.html">mx.nd.fix</a></td>
+<td>Returns element-wise rounded value to the nearest integer towards zero of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.Flatten.html">mx.nd.flatten</a></td>
+<td>Flattens the input array into a 2-D array by collapsing the higher dimensions.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.flip.html">mx.nd.flip</a></td>
+<td>Reverses the order of elements along given axis while preserving array shape.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.floor.html">mx.nd.floor</a></td>
+<td>Returns element-wise floor of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.FullyConnected.html">mx.nd.FullyConnected</a></td>
+<td>Applies a linear transformation: :math:'Y = XW^T + b'.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.gamma.html">mx.nd.gamma</a></td>
+<td>Returns the gamma function (extension of the factorial function to the reals) , computed element-wise on the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.gammaln.html">mx.nd.gammaln</a></td>
+<td>Returns element-wise log of the absolute value of the gamma function of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.GridGenerator.html">mx.nd.GridGenerator</a></td>
+<td>Generates 2D sampling grid for bilinear sampling.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.identity.html">mx.nd.identity</a></td>
+<td>Returns a copy of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.IdentityAttachKLSparseReg.html">mx.nd.IdentityAttachKLSparseReg</a></td>
+<td>Apply a sparse regularization to the output a sigmoid activation function.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.InstanceNorm.html">mx.nd.InstanceNorm</a></td>
+<td>Applies instance normalization to the n-dimensional input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.L2Normalization.html">mx.nd.L2Normalization</a></td>
+<td>Normalize the input array using the L2 norm.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.LeakyReLU.html">mx.nd.LeakyReLU</a></td>
+<td>Applies Leaky rectified linear unit activation element-wise to the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.linalg.gemm.html">mx.nd.linalg.gemm</a></td>
+<td>Performs general matrix multiplication and accumulation. Input are three tensors *A*, *B*, *C* each of dimension *n &gt;= 2* and each having the same shape on the leading *n-2* dimensions. For every *n-2* dimensional index *i* let *A*\ :sub:'i'\ , *B*\ :sub:'i'\ , *C*\ :sub:'i' be the matrices given by the last *2* dimensions. The operator performs the BLAS3 function *gemm*</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.linalg.gemm2.html">mx.nd.linalg.gemm2</a></td>
+<td>Performs general matrix multiplication. Input are two tensors *A*, *B* each of dimension *n &gt;= 2* and each having the same shape on the leading *n-2* dimensions. For every *n-2* dimensional index *i* let *A*\ :sub:'i'\ , *B*\ :sub:'i'\ be the matrices given by the last *2* dimensions. The operator performs the BLAS3 function *gemm* (restricted to two arguments)</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.linalg.potrf.html">mx.nd.linalg.potrf</a></td>
+<td>Performs Cholesky factorization of a symmetric positive-definite matrix. Input is a tensor *A* of dimension *n &gt;= 2*. For every *n-2* dimensional index *i* let *A*\ :sub:'i'\ be the matrix given by the last *2* dimensions. The operator performs the Cholesky factorization (LAPACK function *potrf*) on each *A*\ :sub:'i'\ , i.e. it computes a lower triangular matrix *U*\ :sub:'i' such that</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.linalg.potri.html">mx.nd.linalg.potri</a></td>
+<td>Performs matrix inversion from a Cholesky factorization. Input is a tensor *A* of dimension *n &gt;= 2*. For every *n-2* dimensional index *i* let *A*\ :sub:'i'\ be the matrix given by the last *2* dimensions. The operator assumes that each *A*\ :sub:'i' is the Cholesky factorization of some symmetric positive-definite matrix *B*\ :sub:'i' given as a lower triangular matrix (so *A* is the output of a prior call to operator *linalg_potrf*). The operator computes the inverse of each *B*\ :sub:'i' from this decomposition, i.e</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.linalg.sumlogdiag.html">mx.nd.linalg.sumlogdiag</a></td>
+<td>Computes the sum of the logarithms of all diagonal elements in a matrix. Input is a tensor *A* of dimension *n &gt;= 2*. For every *n-2* dimensional index *i* let *A*\ :sub:'i'\ be the matrix given by the last *2* dimensions. The operator performs a reduction of each such matrix to a scalar by summing up the logarithms of all diagonal elements. All matrices must be square and all diagonal elements must be positive.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.linalg.trmm.html">mx.nd.linalg.trmm</a></td>
+<td>Performs multiplication with a triangular matrix. Input are two tensors *A*, *B* each of dimension *n &gt;= 2* and each having the same shape on the leading *n-2* dimensions. For every *n-2* dimensional index *i* let *A*\ :sub:'i'\ , *B*\ :sub:'i'\ be the matrices given by the last *2* dimensions. The operator performs the BLAS3 function *trmm*</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.linalg.trsm.html">mx.nd.linalg.trsm</a></td>
+<td>Solves matrix equations involving a triangular matrix. Input are two tensors *A*, *B* each of dimension *n &gt;= 2* and each having the same shape on the leading *n-2* dimensions. For every *n-2* dimensional index *i* let *A*\ :sub:'i'\ , *B*\ :sub:'i'\ be the matrices given by the last *2* dimensions. The operator performs the BLAS3 function *trsm*, i.e. it solves the equation</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.LinearRegressionOutput.html">mx.nd.LinearRegressionOutput</a></td>
+<td>Computes and optimizes for squared loss during backward propagation. Just outputs "data" during forward propagation.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.load.html">mx.nd.load</a></td>
+<td>Load an mx.nd.array object on disk</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.log.html">mx.nd.log</a></td>
+<td>Returns element-wise Natural logarithmic value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.log.softmax.html">mx.nd.log.softmax</a></td>
+<td>Computes the log softmax of the input. This is equivalent to computing softmax followed by log.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.log10.html">mx.nd.log10</a></td>
+<td>Returns element-wise Base-10 logarithmic value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.log1p.html">mx.nd.log1p</a></td>
+<td>Returns element-wise "log(1 + x)" value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.log2.html">mx.nd.log2</a></td>
+<td>Returns element-wise Base-2 logarithmic value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.LogisticRegressionOutput.html">mx.nd.LogisticRegressionOutput</a></td>
+<td>Applies a logistic function to the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.LRN.html">mx.nd.LRN</a></td>
+<td>Applies local response normalization to the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.MAERegressionOutput.html">mx.nd.MAERegressionOutput</a></td>
+<td>Computes mean absolute error of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.make.loss.html">mx.nd.make.loss</a></td>
+<td>Stops gradient computation. .. note:: "make_loss" is deprecated, use "MakeLoss".</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.MakeLoss.html">mx.nd.MakeLoss</a></td>
+<td>Make your own loss function in network construction.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.max.html">mx.nd.max</a></td>
+<td>Computes the max of array elements over given axes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.max.axis.html">mx.nd.max.axis</a></td>
+<td>Computes the max of array elements over given axes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.mean.html">mx.nd.mean</a></td>
+<td>Computes the mean of array elements over given axes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.min.html">mx.nd.min</a></td>
+<td>Computes the min of array elements over given axes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.min.axis.html">mx.nd.min.axis</a></td>
+<td>Computes the min of array elements over given axes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.mp.sgd.mom.update.html">mx.nd.mp.sgd.mom.update</a></td>
+<td>Updater function for multi-precision sgd optimizer</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.mp.sgd.update.html">mx.nd.mp.sgd.update</a></td>
+<td>Updater function for multi-precision sgd optimizer</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.nanprod.html">mx.nd.nanprod</a></td>
+<td>Computes the product of array elements over given axes treating Not a Numbers ("NaN") as one.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.nansum.html">mx.nd.nansum</a></td>
+<td>Computes the sum of array elements over given axes treating Not a Numbers ("NaN") as zero.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.negative.html">mx.nd.negative</a></td>
+<td>Numerical negative of the argument, element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.norm.html">mx.nd.norm</a></td>
+<td>Flattens the input array and then computes the l2 norm.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.normal.html">mx.nd.normal</a></td>
+<td>Draw random samples from a normal (Gaussian) distribution.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.one.hot.html">mx.nd.one.hot</a></td>
+<td>Returns a one-hot array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.ones.html">mx.nd.ones</a></td>
+<td>Generate an mx.ndarray object with ones</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.ones.like.html">mx.nd.ones.like</a></td>
+<td>Return an array of ones with the same shape and type as the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.Pad.html">mx.nd.pad</a></td>
+<td>Pads an input array with a constant or edge values of the array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.pick.html">mx.nd.pick</a></td>
+<td>Picks elements from an input array according to the input indices along the given axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.Pooling.html">mx.nd.Pooling</a></td>
+<td>Performs pooling on the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.Pooling.v1.html">mx.nd.Pooling.v1</a></td>
+<td>This operator is DEPRECATED. Perform pooling on the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.prod.html">mx.nd.prod</a></td>
+<td>Computes the product of array elements over given axes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.radians.html">mx.nd.radians</a></td>
+<td>Converts each element of the input array from degrees to radians.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.random.exponential.html">mx.nd.random.exponential</a></td>
+<td>Draw random samples from an exponential distribution.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.random.gamma.html">mx.nd.random.gamma</a></td>
+<td>Draw random samples from a gamma distribution.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.random.generalized.negative.binomial.html">mx.nd.random.generalized.negative.binomial</a></td>
+<td>Draw random samples from a generalized negative binomial distribution.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.random.negative.binomial.html">mx.nd.random.negative.binomial</a></td>
+<td>Draw random samples from a negative binomial distribution.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.random.normal.html">mx.nd.random.normal</a></td>
+<td>Draw random samples from a normal (Gaussian) distribution.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.random.poisson.html">mx.nd.random.poisson</a></td>
+<td>Draw random samples from a Poisson distribution.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.random.uniform.html">mx.nd.random.uniform</a></td>
+<td>Draw random samples from a uniform distribution.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.reciprocal.html">mx.nd.reciprocal</a></td>
+<td>Returns the reciprocal of the argument, element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.relu.html">mx.nd.relu</a></td>
+<td>Computes rectified linear.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.repeat.html">mx.nd.repeat</a></td>
+<td>Repeats elements of an array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.Reshape.html">mx.nd.reshape</a></td>
+<td>Reshapes the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.reverse.html">mx.nd.reverse</a></td>
+<td>Reverses the order of elements along given axis while preserving array shape.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.rint.html">mx.nd.rint</a></td>
+<td>Returns element-wise rounded value to the nearest integer of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.rmsprop.update.html">mx.nd.rmsprop.update</a></td>
+<td>Update function for 'RMSProp' optimizer.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.rmspropalex.update.html">mx.nd.rmspropalex.update</a></td>
+<td>Update function for RMSPropAlex optimizer.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.RNN.html">mx.nd.RNN</a></td>
+<td>Applies a recurrent layer to input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.ROIPooling.html">mx.nd.ROIPooling</a></td>
+<td>Performs region of interest(ROI) pooling on the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.round.html">mx.nd.round</a></td>
+<td>Returns element-wise rounded value to the nearest integer of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.rsqrt.html">mx.nd.rsqrt</a></td>
+<td>Returns element-wise inverse square-root value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.sample.exponential.html">mx.nd.sample.exponential</a></td>
+<td>Concurrent sampling from multiple exponential distributions with parameters lambda (rate).</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.sample.gamma.html">mx.nd.sample.gamma</a></td>
+<td>Concurrent sampling from multiple gamma distributions with parameters *alpha* (shape) and *beta* (scale).</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.sample.generalized.negative.binomial.html">mx.nd.sample.generalized.negative.binomial</a></td>
+<td>Concurrent sampling from multiple generalized negative binomial distributions with parameters *mu* (mean) and *alpha* (dispersion).</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.sample.multinomial.html">mx.nd.sample.multinomial</a></td>
+<td>Concurrent sampling from multiple multinomial distributions.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.sample.negative.binomial.html">mx.nd.sample.negative.binomial</a></td>
+<td>Concurrent sampling from multiple negative binomial distributions with parameters *k* (failure limit) and *p* (failure probability).</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.sample.normal.html">mx.nd.sample.normal</a></td>
+<td>Concurrent sampling from multiple normal distributions with parameters *mu* (mean) and *sigma* (standard deviation).</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.sample.poisson.html">mx.nd.sample.poisson</a></td>
+<td>Concurrent sampling from multiple Poisson distributions with parameters lambda (rate).</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.sample.uniform.html">mx.nd.sample.uniform</a></td>
+<td>Concurrent sampling from multiple uniform distributions on the intervals given by *[low,high)*.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.save.html">mx.nd.save</a></td>
+<td>Save an mx.nd.array object</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.SequenceLast.html">mx.nd.SequenceLast</a></td>
+<td>Takes the last element of a sequence.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.SequenceMask.html">mx.nd.SequenceMask</a></td>
+<td>Sets all elements outside the sequence to a constant value.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.SequenceReverse.html">mx.nd.SequenceReverse</a></td>
+<td>Reverses the elements of each sequence.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.sgd.mom.update.html">mx.nd.sgd.mom.update</a></td>
+<td>Momentum update function for Stochastic Gradient Descent (SDG) optimizer.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.sgd.update.html">mx.nd.sgd.update</a></td>
+<td>Update function for Stochastic Gradient Descent (SDG) optimizer.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.sigmoid.html">mx.nd.sigmoid</a></td>
+<td>Computes sigmoid of x element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.sign.html">mx.nd.sign</a></td>
+<td>Returns element-wise sign of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.sin.html">mx.nd.sin</a></td>
+<td>Computes the element-wise sine of the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.sinh.html">mx.nd.sinh</a></td>
+<td>Returns the hyperbolic sine of the input array, computed element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.slice.axis.html">mx.nd.slice.axis</a></td>
+<td>Slices along a given axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.SliceChannel.html">mx.nd.SliceChannel</a></td>
+<td>Splits an array along a particular axis into multiple sub-arrays.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.smooth.l1.html">mx.nd.smooth.l1</a></td>
+<td>Calculate Smooth L1 Loss(lhs, scalar) by summing</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.Softmax.html">mx.nd.softmax</a></td>
+<td>Applies the softmax function.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.softmax.cross.entropy.html">mx.nd.softmax.cross.entropy</a></td>
+<td>Calculate cross entropy of softmax output and one-hot label.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.SoftmaxActivation.html">mx.nd.SoftmaxActivation</a></td>
+<td>Applies softmax activation to input. This is intended for internal layers.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.SoftmaxOutput.html">mx.nd.SoftmaxOutput</a></td>
+<td>Computes the gradient of cross entropy loss with respect to softmax output.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.sort.html">mx.nd.sort</a></td>
+<td>Returns a sorted copy of an input array along the given axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.SpatialTransformer.html">mx.nd.SpatialTransformer</a></td>
+<td>Applies a spatial transformer to input feature map.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.split.html">mx.nd.split</a></td>
+<td>Splits an array along a particular axis into multiple sub-arrays.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.sqrt.html">mx.nd.sqrt</a></td>
+<td>Returns element-wise square-root value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.square.html">mx.nd.square</a></td>
+<td>Returns element-wise squared value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.stack.html">mx.nd.stack</a></td>
+<td>Join a sequence of arrays along a new axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.stop.gradient.html">mx.nd.stop.gradient</a></td>
+<td>Stops gradient computation.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.sum.html">mx.nd.sum</a></td>
+<td>Computes the sum of array elements over given axes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.sum.axis.html">mx.nd.sum.axis</a></td>
+<td>Computes the sum of array elements over given axes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.SVMOutput.html">mx.nd.SVMOutput</a></td>
+<td>Computes support vector machine based transformation of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.swapaxes.html">mx.nd.swapaxes</a></td>
+<td>Interchanges two axes of an array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.SwapAxis.html">mx.nd.SwapAxis</a></td>
+<td>Interchanges two axes of an array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.take.html">mx.nd.take</a></td>
+<td>Takes elements from an input array along the given axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.tan.html">mx.nd.tan</a></td>
+<td>Computes the element-wise tangent of the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.tanh.html">mx.nd.tanh</a></td>
+<td>Returns the hyperbolic tangent of the input array, computed element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.tile.html">mx.nd.tile</a></td>
+<td>Repeats the whole array multiple times.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.topk.html">mx.nd.topk</a></td>
+<td>Returns the top *k* elements in an input array along the given axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.transpose.html">mx.nd.transpose</a></td>
+<td>Permutes the dimensions of an array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.trunc.html">mx.nd.trunc</a></td>
+<td>Return the element-wise truncated value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.uniform.html">mx.nd.uniform</a></td>
+<td>Draw random samples from a uniform distribution.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.UpSampling.html">mx.nd.UpSampling</a></td>
+<td>Performs nearest neighbor/bilinear up sampling to inputs.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.where.html">mx.nd.where</a></td>
+<td>Given three ndarrays, condition, x, and y, return an ndarray with the elements from x or y, depending on the elements from condition are true or false. x and y must have the same shape. If condition has the same shape as x, each element in the output array is from x if the corresponding element in the condition is true, and from y if false. If condition does not have the same shape as x, it must be a 1D array whose size is the same as x's first dimension size. Each row of the output array is from x's row if the corresponding element from condition is true, and from y's row if false.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.zeros.html">mx.nd.zeros</a></td>
+<td>Generate an mx.nd.array object with zeros</td></tr>
+<tr><td style="width: 25%;"><a href="mx.nd.zeros.like.html">mx.nd.zeros.like</a></td>
+<td>Return an array of zeros with the same shape and type as the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.opt.adadelta.html">mx.opt.adadelta</a></td>
+<td>Create an AdaDelta optimizer with respective parameters.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.opt.adagrad.html">mx.opt.adagrad</a></td>
+<td>Create an AdaGrad optimizer with respective parameters. AdaGrad optimizer of Duchi et al., 2011,</td></tr>
+<tr><td style="width: 25%;"><a href="mx.opt.adam.html">mx.opt.adam</a></td>
+<td>Create an Adam optimizer with respective parameters. Adam optimizer as described in [King2014].</td></tr>
+<tr><td style="width: 25%;"><a href="mx.opt.create.html">mx.opt.create</a></td>
+<td>Create an optimizer by name and parameters</td></tr>
+<tr><td style="width: 25%;"><a href="mx.opt.get.updater.html">mx.opt.get.updater</a></td>
+<td>Get an updater closure that can take list of weight and gradient and return updated list of weight.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.opt.rmsprop.html">mx.opt.rmsprop</a></td>
+<td>Create an RMSProp optimizer with respective parameters. Reference: Tieleman T, Hinton G. Lecture 6.5-rmsprop: Divide the gradient by a running average of its recent magnitude[J]. COURSERA: Neural Networks for Machine Learning, 2012, 4(2). The code follows: http://arxiv.org/pdf/1308.0850v5.pdf Eq(38) - Eq(45) by Alex Graves, 2013.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.opt.sgd.html">mx.opt.sgd</a></td>
+<td>Create an SGD optimizer with respective parameters. Perform SGD with momentum update</td></tr>
+<tr><td style="width: 25%;"><a href="mx.profiler.config.html">mx.profiler.config</a></td>
+<td>Set up the configuration of profiler.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.profiler.state.html">mx.profiler.state</a></td>
+<td>Set up the profiler state to record operator.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.rnn.html">mx.rnn</a></td>
+<td>Training RNN Unrolled Model</td></tr>
+<tr><td style="width: 25%;"><a href="mx.rnn.forward.html">mx.rnn.forward</a></td>
+<td>Using forward function to predict in rnn inference model</td></tr>
+<tr><td style="width: 25%;"><a href="mx.rnn.inference.html">mx.rnn.inference</a></td>
+<td>Create a RNN Inference Model</td></tr>
+<tr><td style="width: 25%;"><a href="mx.rnorm.html">mx.rnorm</a></td>
+<td>Generate nomal distribution with mean and sd.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.runif.html">mx.runif</a></td>
+<td>Generate uniform distribution in [low, high) with specified shape.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.serialize.html">mx.serialize</a></td>
+<td>Serialize MXNet model into RData-compatiable format.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.set.seed.html">mx.set.seed</a></td>
+<td>Set the seed used by mxnet device-specific random number generators.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.simple.bind.html">mx.simple.bind</a></td>
+<td>Simple bind the symbol to executor, with information from input shapes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.abs.html">mx.symbol.abs</a></td>
+<td>abs:Returns element-wise absolute value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.Activation.html">mx.symbol.Activation</a></td>
+<td>Activation:Applies an activation function element-wise to the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.adam_update.html">mx.symbol.adam_update</a></td>
+<td>adam_update:Update function for Adam optimizer. Adam is seen as a generalization of AdaGrad.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.add_n.html">mx.symbol.add_n</a></td>
+<td>add_n:Adds all input arguments element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.arccos.html">mx.symbol.arccos</a></td>
+<td>arccos:Returns element-wise inverse cosine of the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.arccosh.html">mx.symbol.arccosh</a></td>
+<td>arccosh:Returns the element-wise inverse hyperbolic cosine of the input array, computed element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.arcsin.html">mx.symbol.arcsin</a></td>
+<td>arcsin:Returns element-wise inverse sine of the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.arcsinh.html">mx.symbol.arcsinh</a></td>
+<td>arcsinh:Returns the element-wise inverse hyperbolic sine of the input array, computed element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.arctan.html">mx.symbol.arctan</a></td>
+<td>arctan:Returns element-wise inverse tangent of the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.arctanh.html">mx.symbol.arctanh</a></td>
+<td>arctanh:Returns the element-wise inverse hyperbolic tangent of the input array, computed element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.argmax.html">mx.symbol.argmax</a></td>
+<td>argmax:Returns indices of the maximum values along an axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.argmax_channel.html">mx.symbol.argmax_channel</a></td>
+<td>argmax_channel:Returns argmax indices of each channel from the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.argmin.html">mx.symbol.argmin</a></td>
+<td>argmin:Returns indices of the minimum values along an axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.argsort.html">mx.symbol.argsort</a></td>
+<td>argsort:Returns the indices that would sort an input array along the given axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.BatchNorm.html">mx.symbol.BatchNorm</a></td>
+<td>BatchNorm:Batch normalization.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.BatchNorm_v1.html">mx.symbol.BatchNorm_v1</a></td>
+<td>BatchNorm_v1:Batch normalization.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.batch_dot.html">mx.symbol.batch_dot</a></td>
+<td>batch_dot:Batchwise dot product.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.batch_take.html">mx.symbol.batch_take</a></td>
+<td>batch_take:Takes elements from a data batch.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.BilinearSampler.html">mx.symbol.BilinearSampler</a></td>
+<td>BilinearSampler:Applies bilinear sampling to input feature map.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.BlockGrad.html">mx.symbol.BlockGrad</a></td>
+<td>BlockGrad:Stops gradient computation.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_add.html">mx.symbol.broadcast_add</a></td>
+<td>broadcast_add:Returns element-wise sum of the input arrays with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_axes.html">mx.symbol.broadcast_axes</a></td>
+<td>broadcast_axes:Broadcasts the input array over particular axes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_axis.html">mx.symbol.broadcast_axis</a></td>
+<td>broadcast_axis:Broadcasts the input array over particular axes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_div.html">mx.symbol.broadcast_div</a></td>
+<td>broadcast_div:Returns element-wise division of the input arrays with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_equal.html">mx.symbol.broadcast_equal</a></td>
+<td>broadcast_equal:Returns the result of element-wise **equal to** (==) comparison operation with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_greater.html">mx.symbol.broadcast_greater</a></td>
+<td>broadcast_greater:Returns the result of element-wise **greater than** (&gt;) comparison operation with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_greater_equal.html">mx.symbol.broadcast_greater_equal</a></td>
+<td>broadcast_greater_equal:Returns the result of element-wise **greater than or equal to** (&gt;=) comparison operation with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_hypot.html">mx.symbol.broadcast_hypot</a></td>
+<td>broadcast_hypot: Returns the hypotenuse of a right angled triangle, given its "legs" with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_lesser.html">mx.symbol.broadcast_lesser</a></td>
+<td>broadcast_lesser:Returns the result of element-wise **lesser than** (&lt;) comparison operation with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_lesser_equal.html">mx.symbol.broadcast_lesser_equal</a></td>
+<td>broadcast_lesser_equal:Returns the result of element-wise **lesser than or equal to** (&lt;=) comparison operation with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_maximum.html">mx.symbol.broadcast_maximum</a></td>
+<td>broadcast_maximum:Returns element-wise maximum of the input arrays with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_minimum.html">mx.symbol.broadcast_minimum</a></td>
+<td>broadcast_minimum:Returns element-wise minimum of the input arrays with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_minus.html">mx.symbol.broadcast_minus</a></td>
+<td>broadcast_minus:Returns element-wise difference of the input arrays with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_mod.html">mx.symbol.broadcast_mod</a></td>
+<td>broadcast_mod:Returns element-wise modulo of the input arrays with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_mul.html">mx.symbol.broadcast_mul</a></td>
+<td>broadcast_mul:Returns element-wise product of the input arrays with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_not_equal.html">mx.symbol.broadcast_not_equal</a></td>
+<td>broadcast_not_equal:Returns the result of element-wise **not equal to** (!=) comparison operation with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_plus.html">mx.symbol.broadcast_plus</a></td>
+<td>broadcast_plus:Returns element-wise sum of the input arrays with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_power.html">mx.symbol.broadcast_power</a></td>
+<td>broadcast_power:Returns result of first array elements raised to powers from second array, element-wise with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_sub.html">mx.symbol.broadcast_sub</a></td>
+<td>broadcast_sub:Returns element-wise difference of the input arrays with broadcasting.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.broadcast_to.html">mx.symbol.broadcast_to</a></td>
+<td>broadcast_to:Broadcasts the input array to a new shape.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.Cast.html">mx.symbol.cast</a></td>
+<td>cast:Casts all elements of the input to a new type.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.ceil.html">mx.symbol.ceil</a></td>
+<td>ceil:Returns element-wise ceiling of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.choose_element_0index.html">mx.symbol.choose_element_0index</a></td>
+<td>choose_element_0index:Choose one element from each line(row for python, column for R/Julia) in lhs according to index indicated by rhs. This function assume rhs uses 0-based index.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.clip.html">mx.symbol.clip</a></td>
+<td>clip:Clips (limits) the values in an array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.concat.html">mx.symbol.Concat</a></td>
+<td>Perform an feature concat on channel dim (dim 1) over all the inputs.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.Convolution.html">mx.symbol.Convolution</a></td>
+<td>Convolution:Compute *N*-D convolution on *(N+2)*-D input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.Convolution_v1.html">mx.symbol.Convolution_v1</a></td>
+<td>Convolution_v1:This operator is DEPRECATED. Apply convolution to input then add a bias.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.Correlation.html">mx.symbol.Correlation</a></td>
+<td>Correlation:Applies correlation to inputs.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.cos.html">mx.symbol.cos</a></td>
+<td>cos:Computes the element-wise cosine of the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.cosh.html">mx.symbol.cosh</a></td>
+<td>cosh:Returns the hyperbolic cosine of the input array, computed element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.Crop.html">mx.symbol.crop</a></td>
+<td>crop:Slices a contiguous region of the array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.Custom.html">mx.symbol.Custom</a></td>
+<td>Custom:Apply a custom operator implemented in a frontend language (like Python).</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.Deconvolution.html">mx.symbol.Deconvolution</a></td>
+<td>Deconvolution:Computes 2D transposed convolution (aka fractionally strided convolution) of the input tensor. This operation can be seen as the gradient of Convolution operation with respect to its input. Convolution usually reduces the size of the input. Transposed convolution works the other way, going from a smaller input to a larger output while preserving the connectivity pattern.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.degrees.html">mx.symbol.degrees</a></td>
+<td>degrees:Converts each element of the input array from radians to degrees.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.dot.html">mx.symbol.dot</a></td>
+<td>dot:Dot product of two arrays.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.Dropout.html">mx.symbol.Dropout</a></td>
+<td>Dropout:Applies dropout operation to input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.ElementWiseSum.html">mx.symbol.ElementWiseSum</a></td>
+<td>ElementWiseSum:Adds all input arguments element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.elemwise_add.html">mx.symbol.elemwise_add</a></td>
+<td>elemwise_add:Adds arguments element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.Embedding.html">mx.symbol.Embedding</a></td>
+<td>Embedding:Maps integer indices to vector representations (embeddings).</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.exp.html">mx.symbol.exp</a></td>
+<td>exp:Returns element-wise exponential value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.expand_dims.html">mx.symbol.expand_dims</a></td>
+<td>expand_dims:Inserts a new axis of size 1 into the array shape</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.expm1.html">mx.symbol.expm1</a></td>
+<td>expm1:Returns "exp(x) - 1" computed element-wise on the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.fill_element_0index.html">mx.symbol.fill_element_0index</a></td>
+<td>fill_element_0index:Fill one element of each line(row for python, column for R/Julia) in lhs according to index indicated by rhs and values indicated by mhs. This function assume rhs uses 0-based index.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.fix.html">mx.symbol.fix</a></td>
+<td>fix:Returns element-wise rounded value to the nearest integer towards zero of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.Flatten.html">mx.symbol.flatten</a></td>
+<td>flatten:Flattens the input array into a 2-D array by collapsing the higher dimensions.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.flip.html">mx.symbol.flip</a></td>
+<td>flip:Reverses the order of elements along given axis while preserving array shape.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.floor.html">mx.symbol.floor</a></td>
+<td>floor:Returns element-wise floor of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.FullyConnected.html">mx.symbol.FullyConnected</a></td>
+<td>FullyConnected:Applies a linear transformation: :math:'Y = XW^T + b'.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.gamma.html">mx.symbol.gamma</a></td>
+<td>gamma:Returns the gamma function (extension of the factorial function to the reals) , computed element-wise on the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.gammaln.html">mx.symbol.gammaln</a></td>
+<td>gammaln:Returns element-wise log of the absolute value of the gamma function of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.GridGenerator.html">mx.symbol.GridGenerator</a></td>
+<td>GridGenerator:Generates 2D sampling grid for bilinear sampling.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.Group.html">mx.symbol.Group</a></td>
+<td>Create a symbol that groups symbols together.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.identity.html">mx.symbol.identity</a></td>
+<td>identity:Returns a copy of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.IdentityAttachKLSparseReg.html">mx.symbol.IdentityAttachKLSparseReg</a></td>
+<td>IdentityAttachKLSparseReg:Apply a sparse regularization to the output a sigmoid activation function.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.infer.shape.html">mx.symbol.infer.shape</a></td>
+<td>Inference the shape of arguments, outputs, and auxiliary states.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.InstanceNorm.html">mx.symbol.InstanceNorm</a></td>
+<td>InstanceNorm:Applies instance normalization to the n-dimensional input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.L2Normalization.html">mx.symbol.L2Normalization</a></td>
+<td>L2Normalization:Normalize the input array using the L2 norm.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.LeakyReLU.html">mx.symbol.LeakyReLU</a></td>
+<td>LeakyReLU:Applies Leaky rectified linear unit activation element-wise to the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.linalg_gemm.html">mx.symbol.linalg_gemm</a></td>
+<td>linalg_gemm:Performs general matrix multiplication and accumulation. Input are three tensors *A*, *B*, *C* each of dimension *n &gt;= 2* and each having the same shape on the leading *n-2* dimensions. For every *n-2* dimensional index *i* let *A*\ :sub:'i'\ , *B*\ :sub:'i'\ , *C*\ :sub:'i' be the matrices given by the last *2* dimensions. The operator performs the BLAS3 function *gemm*</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.linalg_gemm2.html">mx.symbol.linalg_gemm2</a></td>
+<td>linalg_gemm2:Performs general matrix multiplication. Input are two tensors *A*, *B* each of dimension *n &gt;= 2* and each having the same shape on the leading *n-2* dimensions. For every *n-2* dimensional index *i* let *A*\ :sub:'i'\ , *B*\ :sub:'i'\ be the matrices given by the last *2* dimensions. The operator performs the BLAS3 function *gemm* (restricted to two arguments)</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.linalg_potrf.html">mx.symbol.linalg_potrf</a></td>
+<td>linalg_potrf:Performs Cholesky factorization of a symmetric positive-definite matrix. Input is a tensor *A* of dimension *n &gt;= 2*. For every *n-2* dimensional index *i* let *A*\ :sub:'i'\ be the matrix given by the last *2* dimensions. The operator performs the Cholesky factorization (LAPACK function *potrf*) on each *A*\ :sub:'i'\ , i.e. it computes a lower triangular matrix *U*\ :sub:'i' such that</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.linalg_potri.html">mx.symbol.linalg_potri</a></td>
+<td>linalg_potri:Performs matrix inversion from a Cholesky factorization. Input is a tensor *A* of dimension *n &gt;= 2*. For every *n-2* dimensional index *i* let *A*\ :sub:'i'\ be the matrix given by the last *2* dimensions. The operator assumes that each *A*\ :sub:'i' is the Cholesky factorization of some symmetric positive-definite matrix *B*\ :sub:'i' given as a lower triangular matrix (so *A* is the output of a prior call to operator *linalg_potrf*). The operator computes the inverse of each *B*\ :sub:'i' from this decomposition, i.e</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.linalg_sumlogdiag.html">mx.symbol.linalg_sumlogdiag</a></td>
+<td>linalg_sumlogdiag:Computes the sum of the logarithms of all diagonal elements in a matrix. Input is a tensor *A* of dimension *n &gt;= 2*. For every *n-2* dimensional index *i* let *A*\ :sub:'i'\ be the matrix given by the last *2* dimensions. The operator performs a reduction of each such matrix to a scalar by summing up the logarithms of all diagonal elements. All matrices must be square and all diagonal elements must be positive.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.linalg_trmm.html">mx.symbol.linalg_trmm</a></td>
+<td>linalg_trmm:Performs multiplication with a triangular matrix. Input are two tensors *A*, *B* each of dimension *n &gt;= 2* and each having the same shape on the leading *n-2* dimensions. For every *n-2* dimensional index *i* let *A*\ :sub:'i'\ , *B*\ :sub:'i'\ be the matrices given by the last *2* dimensions. The operator performs the BLAS3 function *trmm*</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.linalg_trsm.html">mx.symbol.linalg_trsm</a></td>
+<td>linalg_trsm:Solves matrix equations involving a triangular matrix. Input are two tensors *A*, *B* each of dimension *n &gt;= 2* and each having the same shape on the leading *n-2* dimensions. For every *n-2* dimensional index *i* let *A*\ :sub:'i'\ , *B*\ :sub:'i'\ be the matrices given by the last *2* dimensions. The operator performs the BLAS3 function *trsm*, i.e. it solves the equation</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.LinearRegressionOutput.html">mx.symbol.LinearRegressionOutput</a></td>
+<td>LinearRegressionOutput:Computes and optimizes for squared loss during backward propagation. Just outputs "data" during forward propagation.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.load.html">mx.symbol.load</a></td>
+<td>Load an mx.symbol object</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.load.json.html">mx.symbol.load.json</a></td>
+<td>Load an mx.symbol object from a json string</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.log.html">mx.symbol.log</a></td>
+<td>log:Returns element-wise Natural logarithmic value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.log10.html">mx.symbol.log10</a></td>
+<td>log10:Returns element-wise Base-10 logarithmic value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.log1p.html">mx.symbol.log1p</a></td>
+<td>log1p:Returns element-wise "log(1 + x)" value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.log2.html">mx.symbol.log2</a></td>
+<td>log2:Returns element-wise Base-2 logarithmic value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.LogisticRegressionOutput.html">mx.symbol.LogisticRegressionOutput</a></td>
+<td>LogisticRegressionOutput:Applies a logistic function to the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.log_softmax.html">mx.symbol.log_softmax</a></td>
+<td>log_softmax:Computes the log softmax of the input. This is equivalent to computing softmax followed by log.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.LRN.html">mx.symbol.LRN</a></td>
+<td>LRN:Applies local response normalization to the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.MAERegressionOutput.html">mx.symbol.MAERegressionOutput</a></td>
+<td>MAERegressionOutput:Computes mean absolute error of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.MakeLoss.html">mx.symbol.MakeLoss</a></td>
+<td>MakeLoss:Make your own loss function in network construction.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.make_loss.html">mx.symbol.make_loss</a></td>
+<td>make_loss:Stops gradient computation. .. note:: "make_loss" is deprecated, use "MakeLoss".</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.max.html">mx.symbol.max</a></td>
+<td>max:Computes the max of array elements over given axes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.max_axis.html">mx.symbol.max_axis</a></td>
+<td>max_axis:Computes the max of array elements over given axes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.mean.html">mx.symbol.mean</a></td>
+<td>mean:Computes the mean of array elements over given axes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.mp_sgd_mom_update.html">mx.symbol.mp_sgd_mom_update</a></td>
+<td>mp_sgd_mom_update:Updater function for multi-precision sgd optimizer</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.mp_sgd_update.html">mx.symbol.mp_sgd_update</a></td>
+<td>mp_sgd_update:Updater function for multi-precision sgd optimizer</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.nanprod.html">mx.symbol.nanprod</a></td>
+<td>nanprod:Computes the product of array elements over given axes treating Not a Numbers ("NaN") as one.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.nansum.html">mx.symbol.nansum</a></td>
+<td>nansum:Computes the sum of array elements over given axes treating Not a Numbers ("NaN") as zero.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.negative.html">mx.symbol.negative</a></td>
+<td>negative:Numerical negative of the argument, element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.norm.html">mx.symbol.norm</a></td>
+<td>norm:Flattens the input array and then computes the l2 norm.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.normal.html">mx.symbol.normal</a></td>
+<td>normal:Draw random samples from a normal (Gaussian) distribution.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.ones_like.html">mx.symbol.ones_like</a></td>
+<td>ones_like:Return an array of ones with the same shape and type as the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.one_hot.html">mx.symbol.one_hot</a></td>
+<td>one_hot:Returns a one-hot array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.Pad.html">mx.symbol.pad</a></td>
+<td>pad:Pads an input array with a constant or edge values of the array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.pick.html">mx.symbol.pick</a></td>
+<td>pick:Picks elements from an input array according to the input indices along the given axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.Pooling.html">mx.symbol.Pooling</a></td>
+<td>Pooling:Performs pooling on the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.Pooling_v1.html">mx.symbol.Pooling_v1</a></td>
+<td>Pooling_v1:This operator is DEPRECATED. Perform pooling on the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.prod.html">mx.symbol.prod</a></td>
+<td>prod:Computes the product of array elements over given axes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.radians.html">mx.symbol.radians</a></td>
+<td>radians:Converts each element of the input array from degrees to radians.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.random_exponential.html">mx.symbol.random_exponential</a></td>
+<td>random_exponential:Draw random samples from an exponential distribution.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.random_gamma.html">mx.symbol.random_gamma</a></td>
+<td>random_gamma:Draw random samples from a gamma distribution.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.random_generalized_negative_binomial.html">mx.symbol.random_generalized_negative_binomial</a></td>
+<td>random_generalized_negative_binomial:Draw random samples from a generalized negative binomial distribution.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.random_negative_binomial.html">mx.symbol.random_negative_binomial</a></td>
+<td>random_negative_binomial:Draw random samples from a negative binomial distribution.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.random_normal.html">mx.symbol.random_normal</a></td>
+<td>random_normal:Draw random samples from a normal (Gaussian) distribution.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.random_poisson.html">mx.symbol.random_poisson</a></td>
+<td>random_poisson:Draw random samples from a Poisson distribution.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.random_uniform.html">mx.symbol.random_uniform</a></td>
+<td>random_uniform:Draw random samples from a uniform distribution.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.reciprocal.html">mx.symbol.reciprocal</a></td>
+<td>reciprocal:Returns the reciprocal of the argument, element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.relu.html">mx.symbol.relu</a></td>
+<td>relu:Computes rectified linear.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.repeat.html">mx.symbol.repeat</a></td>
+<td>repeat:Repeats elements of an array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.Reshape.html">mx.symbol.reshape</a></td>
+<td>reshape:Reshapes the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.reverse.html">mx.symbol.reverse</a></td>
+<td>reverse:Reverses the order of elements along given axis while preserving array shape.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.rint.html">mx.symbol.rint</a></td>
+<td>rint:Returns element-wise rounded value to the nearest integer of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.rmspropalex_update.html">mx.symbol.rmspropalex_update</a></td>
+<td>rmspropalex_update:Update function for RMSPropAlex optimizer.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.rmsprop_update.html">mx.symbol.rmsprop_update</a></td>
+<td>rmsprop_update:Update function for 'RMSProp' optimizer.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.RNN.html">mx.symbol.RNN</a></td>
+<td>RNN:Applies a recurrent layer to input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.ROIPooling.html">mx.symbol.ROIPooling</a></td>
+<td>ROIPooling:Performs region of interest(ROI) pooling on the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.round.html">mx.symbol.round</a></td>
+<td>round:Returns element-wise rounded value to the nearest integer of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.rsqrt.html">mx.symbol.rsqrt</a></td>
+<td>rsqrt:Returns element-wise inverse square-root value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.sample_exponential.html">mx.symbol.sample_exponential</a></td>
+<td>sample_exponential:Concurrent sampling from multiple exponential distributions with parameters lambda (rate).</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.sample_gamma.html">mx.symbol.sample_gamma</a></td>
+<td>sample_gamma:Concurrent sampling from multiple gamma distributions with parameters *alpha* (shape) and *beta* (scale).</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.sample_generalized_negative_binomial.html">mx.symbol.sample_generalized_negative_binomial</a></td>
+<td>sample_generalized_negative_binomial:Concurrent sampling from multiple generalized negative binomial distributions with parameters *mu* (mean) and *alpha* (dispersion).</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.sample_multinomial.html">mx.symbol.sample_multinomial</a></td>
+<td>sample_multinomial:Concurrent sampling from multiple multinomial distributions.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.sample_negative_binomial.html">mx.symbol.sample_negative_binomial</a></td>
+<td>sample_negative_binomial:Concurrent sampling from multiple negative binomial distributions with parameters *k* (failure limit) and *p* (failure probability).</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.sample_normal.html">mx.symbol.sample_normal</a></td>
+<td>sample_normal:Concurrent sampling from multiple normal distributions with parameters *mu* (mean) and *sigma* (standard deviation).</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.sample_poisson.html">mx.symbol.sample_poisson</a></td>
+<td>sample_poisson:Concurrent sampling from multiple Poisson distributions with parameters lambda (rate).</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.sample_uniform.html">mx.symbol.sample_uniform</a></td>
+<td>sample_uniform:Concurrent sampling from multiple uniform distributions on the intervals given by *[low,high)*.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.save.html">mx.symbol.save</a></td>
+<td>Save an mx.symbol object</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.SequenceLast.html">mx.symbol.SequenceLast</a></td>
+<td>SequenceLast:Takes the last element of a sequence.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.SequenceMask.html">mx.symbol.SequenceMask</a></td>
+<td>SequenceMask:Sets all elements outside the sequence to a constant value.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.SequenceReverse.html">mx.symbol.SequenceReverse</a></td>
+<td>SequenceReverse:Reverses the elements of each sequence.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.sgd_mom_update.html">mx.symbol.sgd_mom_update</a></td>
+<td>sgd_mom_update:Momentum update function for Stochastic Gradient Descent (SDG) optimizer.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.sgd_update.html">mx.symbol.sgd_update</a></td>
+<td>sgd_update:Update function for Stochastic Gradient Descent (SDG) optimizer.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.sigmoid.html">mx.symbol.sigmoid</a></td>
+<td>sigmoid:Computes sigmoid of x element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.sign.html">mx.symbol.sign</a></td>
+<td>sign:Returns element-wise sign of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.sin.html">mx.symbol.sin</a></td>
+<td>sin:Computes the element-wise sine of the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.sinh.html">mx.symbol.sinh</a></td>
+<td>sinh:Returns the hyperbolic sine of the input array, computed element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.slice.html">mx.symbol.slice</a></td>
+<td>slice:Slices a contiguous region of the array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.SliceChannel.html">mx.symbol.SliceChannel</a></td>
+<td>SliceChannel:Splits an array along a particular axis into multiple sub-arrays.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.slice_axis.html">mx.symbol.slice_axis</a></td>
+<td>slice_axis:Slices along a given axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.smooth_l1.html">mx.symbol.smooth_l1</a></td>
+<td>smooth_l1:Calculate Smooth L1 Loss(lhs, scalar) by summing</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.Softmax.html">mx.symbol.softmax</a></td>
+<td>softmax:Applies the softmax function.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.SoftmaxActivation.html">mx.symbol.SoftmaxActivation</a></td>
+<td>SoftmaxActivation:Applies softmax activation to input. This is intended for internal layers.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.SoftmaxOutput.html">mx.symbol.SoftmaxOutput</a></td>
+<td>SoftmaxOutput:Computes the gradient of cross entropy loss with respect to softmax output.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.softmax_cross_entropy.html">mx.symbol.softmax_cross_entropy</a></td>
+<td>softmax_cross_entropy:Calculate cross entropy of softmax output and one-hot label.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.sort.html">mx.symbol.sort</a></td>
+<td>sort:Returns a sorted copy of an input array along the given axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.SpatialTransformer.html">mx.symbol.SpatialTransformer</a></td>
+<td>SpatialTransformer:Applies a spatial transformer to input feature map.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.split.html">mx.symbol.split</a></td>
+<td>split:Splits an array along a particular axis into multiple sub-arrays.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.sqrt.html">mx.symbol.sqrt</a></td>
+<td>sqrt:Returns element-wise square-root value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.square.html">mx.symbol.square</a></td>
+<td>square:Returns element-wise squared value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.stack.html">mx.symbol.stack</a></td>
+<td>stack:Join a sequence of arrays along a new axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.stop_gradient.html">mx.symbol.stop_gradient</a></td>
+<td>stop_gradient:Stops gradient computation.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.sum.html">mx.symbol.sum</a></td>
+<td>sum:Computes the sum of array elements over given axes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.sum_axis.html">mx.symbol.sum_axis</a></td>
+<td>sum_axis:Computes the sum of array elements over given axes.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.SVMOutput.html">mx.symbol.SVMOutput</a></td>
+<td>SVMOutput:Computes support vector machine based transformation of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.swapaxes.html">mx.symbol.swapaxes</a></td>
+<td>swapaxes:Interchanges two axes of an array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.SwapAxis.html">mx.symbol.SwapAxis</a></td>
+<td>SwapAxis:Interchanges two axes of an array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.take.html">mx.symbol.take</a></td>
+<td>take:Takes elements from an input array along the given axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.tan.html">mx.symbol.tan</a></td>
+<td>tan:Computes the element-wise tangent of the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.tanh.html">mx.symbol.tanh</a></td>
+<td>tanh:Returns the hyperbolic tangent of the input array, computed element-wise.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.tile.html">mx.symbol.tile</a></td>
+<td>tile:Repeats the whole array multiple times.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.topk.html">mx.symbol.topk</a></td>
+<td>topk:Returns the top *k* elements in an input array along the given axis.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.transpose.html">mx.symbol.transpose</a></td>
+<td>transpose:Permutes the dimensions of an array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.trunc.html">mx.symbol.trunc</a></td>
+<td>trunc:Return the element-wise truncated value of the input.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.uniform.html">mx.symbol.uniform</a></td>
+<td>uniform:Draw random samples from a uniform distribution.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.UpSampling.html">mx.symbol.UpSampling</a></td>
+<td>UpSampling:Performs nearest neighbor/bilinear up sampling to inputs.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.Variable.html">mx.symbol.Variable</a></td>
+<td>Create a symbolic variable with specified name.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.where.html">mx.symbol.where</a></td>
+<td>where:Given three ndarrays, condition, x, and y, return an ndarray with the elements from x or y, depending on the elements from condition are true or false. x and y must have the same shape. If condition has the same shape as x, each element in the output array is from x if the corresponding element in the condition is true, and from y if false. If condition does not have the same shape as x, it must be a 1D array whose size is the same as x's first dimension size. Each row of the output array is from x's row if the corresponding element from condition is true, and from y's row if false.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.symbol.zeros_like.html">mx.symbol.zeros_like</a></td>
+<td>zeros_like:Return an array of zeros with the same shape and type as the input array.</td></tr>
+<tr><td style="width: 25%;"><a href="mx.unserialize.html">mx.unserialize</a></td>
+<td>Unserialize MXNet model from Robject.</td></tr>
+<tr><td style="width: 25%;"><a href="mxnet.html">mxnet</a></td>
+<td>MXNet: Flexible and Efficient GPU computing and Deep Learning.</td></tr>
+<tr><td style="width: 25%;"><a href="mxnet.export.html">mxnet.export</a></td>
+<td>Internal function to generate mxnet_generated.R Users do not need to call this function.</td></tr>
+</table>
+
+<h2><a name="O">-- O --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="Ops.MXNDArray.html">Ops.MXNDArray</a></td>
+<td>Binary operator overloading of mx.ndarray</td></tr>
+<tr><td style="width: 25%;"><a href="outputs.html">outputs</a></td>
+<td>Get the outputs of a symbol.</td></tr>
+</table>
+
+<h2><a name="P">-- P --</a></h2>
+
+<table width="100%">
+<tr><td style="width: 25%;"><a href="predict.MXFeedForwardModel.html">predict.MXFeedForwardModel</a></td>
+<td>Predict the outputs given a model and dataset.</td></tr>
+<tr><td style="width: 25%;"><a href="print.MXNDArray.html">print.MXNDArray</a></td>
+<td>print operator overload of mx.ndarray</td></tr>
+</table>
+</body></html>
